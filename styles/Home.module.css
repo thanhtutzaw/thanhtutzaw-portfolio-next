@@ -1,157 +1,176 @@
-
 .main {
-  min-height: 100vh;
+  min-height      : 100vh;
   background-color: rgb(31, 30, 30);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display         : flex;
+  justify-content : center;
+  align-items     : center;
 }
-.cardsContainer{
+
+.cardsContainer {
   /* grid-auto-rows       : 115%; */
-  list-style:none;
-  display: grid;
-  min-width: 50%;
-    /* grid-template-columns:  repeat(2, 1.2fr) ; */
+  list-style              : none;
+  display                 : grid;
+  min-width               : 50%;
+  /* grid-template-columns:  repeat(2, 1.2fr) ; */
   /* column-gap           : 20px;
-  row-gap              : 20px; */
-  grid-gap: 1rem;
-  grid-template-columns: 2fr 2fr 2fr;
-grid-template-rows   : repeat(2, 1fr);
-  }
-.card{
-  display:grid;
-  place-items: center;
-  width:100%;
-  height:200px;
-  
+  row-gap                 : 20px; */
+  grid-gap                : 1rem;
+  grid-template-columns   : 2fr 2fr 2fr;
+  grid-template-rows      : repeat(2, 1fr);
+  /* padding                 : 0; */
+  padding: 2rem;
 }
-.card1{
+
+.card {
+  display    : grid;
+  place-items: center;
+  width      : 100%;
+  height     : 220px;
+
+}
+
+.image {
+  object-fit   : contain;
+  /* object-fit: contain;
+  max-width    : 100%; */
+}
+
+.card1 {
   background-color: #FC035E;
 
   grid-column: 1/2;
-  grid-row:1/2;
+  grid-row   : 1/2;
+
 
 }
-.card2{
+
+.card2 {
   background-color: #FC035E;
 
   grid-column: 2/4;
   /* grid-row:1/2; */
-  /* outline: 4px solid rebeccapurple; */
+  /* outline : 4px solid rebeccapurple; */
 
 }
-.card3{
+
+.card3 {
   background-color: #FC035E;
 
   grid-column: 1/3;
-  grid-row:2/2;
-  /* outline: 2px solid rgb(50, 236, 3); */
+  grid-row   : 2/2;
+  /* outline : 2px solid rgb(50, 236, 3); */
 
 }
-.card4{
+
+.card4 {
   /* background-color: #FC035E; */
 
   /* outline: 2px solid red; */
-  grid-column: 3/4;
-  grid-row:2/2;
+  grid-column       : 3/4;
+  grid-row          : 2/2;
   /* transform-style: preserve-3d;
-transform      : translateZ(-100px); */
+transform           : translateZ(-100px); */
 
- width          : 200px;
- height         : 200px;
- position       : relative;
- transform-style: preserve-3d;
- transform      : translateZ(-100px);
-  /* box-shadow: 2px 2px 20px rgba(27, 27, 27, 0.966); */
-  grid-gap: unset;
-/* transform-style: preserve-3d;
-transform: rotateY(360deg) rotateY(360deg); */
-/* transform      : translateZ(50px); */
-
-}
-.card5{
-  /* background-color: #FC035E; */
-
-  /* grid-column    : 3/4;
-grid-row       :2/2;
-transform-style: preserve-3d; */
-
-
+  min-width         : 120px;
+  min-height        : 120px;
+  position          : relative;
+  transform-style   : preserve-3d;
+  transform         : translateZ(-100px);
+  /* box-shadow     : 2px 2px 20px rgba(27, 27, 27, 0.966); */
+  grid-gap          : unset;
+  /* transform-style: preserve-3d;
+transform           : rotateY(360deg) rotateY(360deg); */
+  /* transform      : translateZ(50px); */
+  animation         : spin 5s infinite ease-in-out;
 
 }
-.d4{
+
+.animate {
   /* transform: rotateY(349deg) rotateX(315deg); */
-  animation: spin 5s infinite ease-in-out;
+  /* animation: spin 5s infinite ease-in-out; */
 }
+
 @keyframes spin {
-  0%{
+  0% {
     transform: translateZ(-100px) rotateX(0deg) rotateY(0deg);
   }
-  27%{
-    transform:  translateZ(-100px) rotateX(90deg);
+
+  27% {
+    transform: translateZ(-100px) rotateX(90deg);
   }
-  45%{
-    transform:  translateZ(-100px) rotateX(180deg);
+
+  45% {
+    transform: translateZ(-100px) rotateX(180deg);
   }
-  65%{
-    transform:  translateZ(-100px) rotateX(-90deg);
+
+  65% {
+    transform   : translateZ(-100px) rotateX(-90deg);
     /* transform:  translateZ(-100px) rotateX(-180deg); */
   }
-  85%{
-    transform: translateZ(-100px) rotateY(-90deg);
+
+  85% {
+    transform   : translateZ(-100px) rotateY(-90deg);
     /* transform: translateZ(-100px) rotateY(-90deg); */
     /* transform: translateZ(-100px) rotateX(360deg) rotateY(360deg); */
-  } 
-  100%{
-    transform: translateZ(-100px) rotateY(-360deg);
+  }
+
+  100% {
+    transform   : translateZ(-100px) rotateY(-360deg);
     /* transform: translateZ(-100px) rotateY(-90deg); */
     /* transform: translateZ(-100px) rotateY(-90deg); */
     /* transform: translateZ(-100px) rotateX(360deg) rotateY(360deg); */
-  } 
+  }
 }
-.d4_face{
-position   : absolute;
-/* width      : 100%;
-height     : 100%; */
-/* width : 200px;
-height : 200px; */
-text-align : center;
-display: flex;
-justify-content: center;
-align-items: center;
-  border-radius: 18px;
-  grid-gap:unset;
-  padding:1.2rem;
-  user-select: none;
+
+.d4_face {
+  position       : absolute;
+  /* width       : 100%;
+height           : 100%; */
+  /* width       : 200px;
+height           : 200px; */
+  text-align     : center;
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+  border-radius  : 18px;
+  grid-gap       : unset;
+  padding        : 1.2rem;
+  user-select    : none;
 }
-.d4_front{
-   background-color: #FC035E;
- opacity         :1;
- transform       : rotateY(0deg) translateZ(100px);
- 
+
+.d4_front {
+  background-color: #FC035E;
+  opacity         : 1;
+  transform       : rotateY(0deg) translateZ(100px);
+
 }
-.d4_back{
+
+.d4_back {
   background-color: #0328fc;
-  opacity:1;  
-  transform: rotateY(90deg) translateZ(100px);
+  opacity         : 1;
+  transform       : rotateY(90deg) translateZ(100px);
 }
-.d4_right{
-  background-color: #03fc94;  
-  opacity:1;
-  transform: rotateZ(180deg) rotateY(180deg) translateZ(100px);
+
+.d4_right {
+  background-color: #03fc94;
+  opacity         : 1;
+  transform       : rotateZ(180deg) rotateY(180deg) translateZ(100px);
 }
-.d4_left{
+
+.d4_left {
   background-color: #ec8b0c;
- opacity         :1;
- transform       : rotateZ(360deg) rotateX(-90deg) translateZ(100px);
+  opacity         : 1;
+  transform       : rotateZ(360deg) rotateX(-90deg) translateZ(100px);
 }
-.d4_top{
+
+.d4_top {
   background-color: #0f92b9;
-  opacity:1;
-  transform: rotateX(90deg) translateZ(100px);
+  opacity         : 1;
+  transform       : rotateX(90deg) translateZ(100px);
 }
-.d4_bottom{
+
+.d4_bottom {
   background-color: #7703fc;
-  opacity:1;
-    transform: translateX(-100px) rotateY(90deg);
+  opacity         : 1;
+  transform       : translateX(-100px) rotateY(90deg);
 }

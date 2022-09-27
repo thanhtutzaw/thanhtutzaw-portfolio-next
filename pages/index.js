@@ -8,8 +8,8 @@ export default function Home() {
     <>
       <Head>
         <title>ThanHtutZaw - thz</title>
-        <meta name="description" content="Web Dev" />
-        <meta name='keywords' content="thanhtutzaw - Frontend Web Developer" />
+        <meta name="description" content="Web Dev , React , Next.js , thanhtutzaw , thz" />
+        <meta name='keywords' content="thanhtutzaw - Frontend Web Developer , Next.js , thanhtutzaw , Web Dev , thz" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -17,7 +17,7 @@ export default function Home() {
         <ul className={styles.cardsContainer}>
 
           <li className={[styles.card, styles.card1].join(" ")}>
-            <Image className={styles.image} width={200} height={220} layout='fixed' src={image} alt="profile"></Image>
+            <Image title='thanhtutzaw' className={styles.image} width={200} height={220} layout='fixed' src={image} alt="thanhtutzaw"></Image>
           </li>
           <li className={[styles.card, styles.card2].join(" ")}>2</li>
           <li className={[styles.card, styles.card3].join(" ")}>3</li>

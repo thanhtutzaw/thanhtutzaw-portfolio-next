@@ -9,6 +9,7 @@ export default function Home() {
       <Head>
         <title>ThanHtutZaw</title>
         <meta name="description" content="Web Dev" />
+        <meta name='keywords' content="thanhtutzaw - Frontend Web Developer" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

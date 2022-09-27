@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>ThanHtutZaw</title>
+        <title>ThanHtutZaw - thz</title>
         <meta name="description" content="Web Dev" />
         <meta name='keywords' content="thanhtutzaw - Frontend Web Developer" />
         <link rel="icon" href="/favicon.ico" />

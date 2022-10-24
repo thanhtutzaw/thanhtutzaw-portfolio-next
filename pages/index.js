@@ -7,7 +7,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>ThanHtutZaw - thz</title>
+        <title>ThanHtutZaw</title>
+        <meta name="google-site-verification" content="qc6hIVo2Smmqv8yS1lTr3fCqAEcAvnAve9MwVzmp0nc" />
         <meta name="description" content="Web Dev , React , Next.js , thanhtutzaw , thz" />
         <meta name='keywords' content="thanhtutzaw - Frontend Web Developer , Next.js , thanhtutzaw , Web Dev , thz" />
         <link rel="icon" href="/favicon.ico" />
@@ -28,16 +29,9 @@ export default function Home() {
             <div className={[styles.d4_face, styles.d4_left].join(" ")}>TypeScript</div>
             <div className={[styles.d4_face, styles.d4_top].join(" ")}>Firebase</div>
             <div className={[styles.d4_face, styles.d4_bottom].join(" ")}>Nest</div>
-
-
             {/* <li className={[ styles.card4].join(" ")}>d</li> */}
             {/* <li className={[ styles.card5].join(" ")}>ccc</li> */}
           </li>
-
-
-
-
-
         </ul>
       </main>
     </>

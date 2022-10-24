@@ -4,21 +4,22 @@
   display         : flex;
   justify-content : center;
   align-items     : center;
+  overflow: hidden;
 }
 
 .cardsContainer {
   /* grid-auto-rows       : 115%; */
-  list-style              : none;
-  display                 : grid;
-  min-width               : 50%;
-  /* grid-template-columns:  repeat(2, 1.2fr) ; */
-  /* column-gap           : 20px;
-  row-gap                 : 20px; */
-  grid-gap                : 1rem;
-  grid-template-columns   : 2fr 2fr 2fr;
-  grid-template-rows      : repeat(2, 1fr);
+  list-style                 : none;
+  display                    : grid;
+  min-width                  : 50%;
+  /* grid-template-columns   :  repeat(2, 1.2fr) ; */
+  /* column-gap              : 20px;
+  row-gap                    : 20px; */
+  grid-gap                   : 1rem;
+  grid-template-columns      : 2fr 2fr 2fr;
+  grid-template-rows         : repeat(2, 1fr);
   /* padding                 : 0; */
-  padding: 2rem;
+  padding                    : 2rem;
 }
 
 .card {

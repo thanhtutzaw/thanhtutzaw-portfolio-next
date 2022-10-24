@@ -22,7 +22,7 @@ export default function Home() {
           </li>
           <li className={[styles.card, styles.card2].join(" ")}>2</li>
           <li className={[styles.card, styles.card3].join(" ")}>3</li>
-          <li className={[styles.card, styles.card4].join(" ")}>
+          <li  className={[styles.card, styles.card4].join(" ")}>
             <div className={[styles.d4_face, styles.d4_front].join(" ")}>React</div>
             <div className={[styles.d4_face, styles.d4_back].join(" ")}>Next</div>
             <div className={[styles.d4_face, styles.d4_right].join(" ")}>SCSS</div>

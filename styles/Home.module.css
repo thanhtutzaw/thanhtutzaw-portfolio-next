@@ -1,17 +1,20 @@
 .main {
   min-height      : 100vh;
-  background-color: rgb(31, 30, 30);
+  /* background-color: rgb(31, 30, 30); */
+  background: linear-gradient(19deg, #1400ff, #06123b);
   display         : flex;
   justify-content : center;
   align-items     : center;
   overflow: hidden;
+  padding:3rem;
+
 }
 
 .cardsContainer {
   /* grid-auto-rows       : 115%; */
   list-style                 : none;
   display                    : grid;
-  min-width                  : 50%;
+  /* min-width                  : 50%; */
   /* grid-template-columns   :  repeat(2, 1.2fr) ; */
   /* column-gap              : 20px;
   row-gap                    : 20px; */
@@ -19,7 +22,8 @@
   grid-template-columns      : 2fr 2fr 2fr;
   grid-template-rows         : repeat(2, 1fr);
   /* padding                 : 0; */
-  padding                    : 2rem;
+  /* padding                    : 2rem; */
+  padding:0;
 }
 
 .card {
@@ -27,6 +31,7 @@
   place-items: center;
   width      : 100%;
   height     : 220px;
+  border-radius: 3%;
 
 }
 
@@ -82,9 +87,25 @@ transform           : translateZ(-100px); */
   /* transform-style: preserve-3d;
 transform           : rotateY(360deg) rotateY(360deg); */
   /* transform      : translateZ(50px); */
+  
   animation         : spin 5s infinite ease-in-out;
-
+  /* animation-duration: 5s; */
+  
 }
+.card4:hover  {
+  /* animation         : spin 15s infinite ease-in-out; */
+  /* transition-delay: 1; */
+  /* animation-duration: 5s; */
+  /* animation: spin 6s; */
+  /* transition-duration: 1s; */
+  
+}
+.main:hover , .card4{
+  /* animation-play-state: running; */
+}
+/* .card3:hover , .card4 {
+  animation-play-state: paused;
+} */
 
 .animate {
   /* transform: rotateY(349deg) rotateX(315deg); */
@@ -137,7 +158,13 @@ height           : 200px; */
   grid-gap       : unset;
   padding        : 1.2rem;
   user-select    : none;
+  transition: all .2s ease-in-out;
 }
+/* .d4_face:hover{
+
+  scale:1.2;
+  transition: all .4s ease-in-out;
+} */
 
 .d4_front {
   background-color: #FC035E;

@@ -13,14 +13,18 @@ a {
 
 * {
   box-sizing: border-box;
+  --primary-bg: #FC035E;
+  --secondary-bg: #0328fc;
 }
-
+body{
+  color:white;
+}
 @media (prefers-color-scheme: dark) {
-  html {
+  /* html {
     color-scheme: dark;
   }
   body {
     color: white;
     background: black;
-  }
+  } */
 }

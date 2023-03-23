@@ -112,7 +112,7 @@
 }
 
 .about {
-  padding       : .5rem;
+  padding       : .5rem 1rem;
   display       : flex;
   flex-direction: column;
   grid-column   : 2/4;
@@ -124,10 +124,18 @@
   /* grid-row:1/2; */
 }
 
+.about .info {
+  margin-top: 0;
+}
+
 .about .footer>p {
   padding  : 0;
   margin   : 10px;
   font-size: 20px;
+}
+
+.about .footer a:hover {
+  text-decoration: underline;
 }
 
 .myworks {
@@ -156,6 +164,7 @@
   padding   : 0;
   overflow  : hidden;
 }
+
 .myworks li {
   width           : 200px;
   height          : 100%;
@@ -167,6 +176,7 @@
   align-items     : center;
   border-radius   : 10px;
 }
+
 @media only screen and (max-width: 600px) {
   .main {
     justify-content: initial;
@@ -178,7 +188,7 @@
   }
 
   .about {
-    width: initial;
+    width   : initial;
     overflow: auto;
   }
 
@@ -191,8 +201,9 @@
     padding       : 10px;
     overflow      : initial;
   }
-  .myworks li{
-    gap:5px;
+
+  .myworks li {
+    gap: 5px;
   }
 }
 

@@ -5,8 +5,8 @@ export function About({}) {
   return (
     <div className={`${styles.card} ${styles.about}`}>
       <p>
-        Professional Web Developer and Concentrate on Frontend Development with
-        React.js
+        <span style={{fontSize:'25px', fontFamily: "serif" }}>I</span> am a Professional Web
+        Developer who specializes in Frontend Development with React.js
       </p>
       <div className={styles.footer}>
         <p>Name - Than Htut Zaw</p>

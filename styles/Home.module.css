@@ -181,6 +181,10 @@
   .main {
     justify-content: initial;
   }
+  .card1{
+        margin: 0 auto;
+  /* width : 280px; */
+  }
 
   .cardsContainer {
     display: initial;

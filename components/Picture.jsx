@@ -7,7 +7,9 @@ export function Picture({ setMounted, image, mounted }) {
     <div className={`${styles.card} ${styles.card1}`}>
       <span
         onAnimationEnd={() => {
-          setMounted(true);
+          if (!mounted) {
+            setMounted(true);
+          }
         }}
         className={styles.rotater}
       ></span>

@@ -1,8 +1,10 @@
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
+import { useState } from "react";
 
-export function Picture({ setMounted, image, mounted }) {
+export function Picture({ image }) {
+  const [mounted, setMounted] = useState(false);
   return (
     <div className={`${styles.card} ${styles.card1}`}>
       <span

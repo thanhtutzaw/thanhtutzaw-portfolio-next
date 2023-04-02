@@ -37,8 +37,9 @@ export function Myworks() {
                   width={30}
                   height={30}
                   alt="github"
+                  title={w.title}
                   src="/github-mark-white.png"
-                ></Image>
+                />
               </a>
             </Link>
             <Link href={w.demo}>

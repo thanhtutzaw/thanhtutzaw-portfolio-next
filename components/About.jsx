@@ -14,18 +14,6 @@ export function About({}) {
   }
   return (
     <div className={`${styles.card} ${styles.about}`}>
-      <dialog onClick={closeModal} id="gmailModal" ref={gmailModalRef}>
-        {copied && <div style={{ color: "green" }}>Copied</div>}
-        <p>zgyi5025@gmail.com</p>
-        <button
-          onClick={() => {
-            navigator.clipboard.writeText("zgyi5025@gmail.com");
-            setcopied(true);
-          }}
-        >
-          Copy
-        </button>
-      </dialog>
       <p className={styles.info}>
         <span style={{ fontSize: "25px", fontFamily: "serif" }}>I</span> am a
         Professional Web Developer who specializes in Frontend Development with
@@ -35,18 +23,12 @@ export function About({}) {
         <p>Name - Than Htut Zaw</p>
         <p>DOB - {2001}</p>
         <p>Education - METRO ( Diploma in Web Enginnering)</p>
-        {/* <p>zgyi5025@gmail.com</p> */}
         <p>
           Reach me via{" "}
-          {/* <Link href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJTJpFKPGJzFWcFtNfMCJzrmwxDFCsTkxTNDVzJMkXkGJDrMztfXgpnfFlxGRZDSmpvPvjV"> */}
-          {/* <Link href="https://mail.google.com/mail/u/0/?hl=en#inbox?compose=GTvVlcSGLrcpvPZvXVZWVnBZzpTvWQzcphFHBGSvfQmlrpGLdTrfqqKrQdMWmvkpCJZvMfKwBLvzl"> */}
           <a
             onClick={() => {
               gmailModalRef.current.showModal();
             }}
-            // href="zgyi5025@gmail.com"
-            // target="_self"
-            // rel="noopener noreferrer"
           >
             Gmail
           </a>
@@ -70,6 +52,18 @@ export function About({}) {
           </Link>
         </p>
       </div>
+      <dialog onClick={closeModal} id="gmailModal" ref={gmailModalRef}>
+        {copied && <div style={{ color: "green" }}>Copied</div>}
+        <p>zgyi5025@gmail.com</p>
+        <button
+          onClick={() => {
+            navigator.clipboard.writeText("zgyi5025@gmail.com");
+            setcopied(true);
+          }}
+        >
+          Copy
+        </button>
+      </dialog>
     </div>
   );
 }

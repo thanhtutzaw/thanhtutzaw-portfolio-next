@@ -11,10 +11,10 @@ export default function Home() {
     <>
       <Head>
         <title>Than Htut Zaw - React DEV</title>
-        <meta
+        {/* <meta
           name="google-site-verification"
           content="qc6hIVo2Smmqv8yS1lTr3fCqAEcAvnAve9MwVzmp0nc"
-        />
+        /> */}
         {/* <meta
           name="description"
           content="Web Dev , React , Next.js , thanhtutzaw , thz"

@@ -231,7 +231,7 @@
   }
 
   .myworks li {
-    gap: 5px;
+    gap: 1rem;
   }
 }
 
@@ -239,6 +239,10 @@
 .myworks li>* {
   display: flex;
   flex   : 1;
+}
+
+.myworks li:hover {
+  opacity: .7;
 }
 
 .myworks p {

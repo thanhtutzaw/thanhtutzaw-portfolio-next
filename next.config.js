@@ -9,6 +9,9 @@ module.exports = nextConfig
 module.exports = {
   i18n: {
     locales: ['en'],
-      defaultLocale: 'en',
+    defaultLocale: 'en',
+  },
+  images: {
+    domains: ['todolistzee3.netlify.app', 'too.netlify.app', 'google-file.vercel.app', "utube-next.vercel.app"],
   },
 }

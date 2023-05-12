@@ -5,8 +5,11 @@ import { Picture } from "../components/Picture";
 import { Skills } from "../components/Skills";
 import image from "../public/thanhtutzaw.png";
 import styles from "../styles/Home.module.css";
+import { useState } from "react";
 
 export default function Home() {
+  const [mounted, setMounted] = useState(false);
+
   return (
     <>
       <Head>
@@ -38,10 +41,10 @@ in Yangon, Myanmar. Tech stack include React, Typescript, Cloud Firestore, Fireb
 
       <main className={styles.main}>
         <div className={styles.cardsContainer}>
-          <Picture image={image} />
+          <Picture mounted={mounted} setMounted={setMounted} image={image} />
           <About />
           <Myworks />
-          <Skills />
+          <Skills mounted={mounted} />
         </div>
       </main>
     </>

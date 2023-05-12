@@ -20,6 +20,8 @@
   transition      : all .3s ease-in-out;
   visibility      : visible;
   backdrop-filter : blur(5px);
+  border-radius   : 100px;
+  border-radius   : 0 0 0 1rem;
 }
 
 .resumeLink:hover {
@@ -70,17 +72,23 @@
   grid-column: 1/2;
   grid-row   : 1/2;
   position   : relative;
-  overflow   : hidden;
+
+  /* overflow   : hidden; */
   width      : 256px;
   user-select: none;
 }
 
 .rotater {
-  width        : 256px;
-  height       : 256px;
-  position     : fixed;
-  animation    : 1.3s rotate .6s forwards ease-in-out;
-  border-radius: 20px;
+  /* width                                : 356px; */
+  width                                : 256px;
+  height                               : 256px;
+  /* position                          : fixed; */
+  position                             : absolute;
+  /* z-index                           : -11; */
+
+  animation       : 1.3s rotate .6s forwards ease-in-out;
+  /* background   : red; */
+  border-radius   : 20px;
 }
 
 @keyframes rotate {
@@ -113,20 +121,30 @@
 }
 
 .about {
-  padding       : .5rem 1rem;
+  padding       : 0 0.5rem;
   display       : flex;
   flex-direction: column;
   grid-column   : 2/4;
   width         : 534px;
   background    : repeating-linear-gradient(45deg, black, transparent 100px);
   color         : rgba(255, 255, 255, 0.945);
-
+  overflow      : hidden;
 
   /* grid-row:1/2; */
 }
 
+.about .container {
+  overflow: auto;
+}
+
 .about .info {
   margin-top: 0;
+  background: #7070706b;
+
+}
+
+.about {
+  /* overflow: auto; */
 }
 
 .about .footer>p {
@@ -148,7 +166,7 @@
 
 }
 
-.myworks h4 {
+.myworks h2 {
   margin: 0;
 }
 
@@ -172,19 +190,24 @@
   background-color: rgba(255, 255, 255, 0.357);
   padding         : 1rem 0.5rem;
   display         : flex;
+  flex-direction  : column;
   flex-wrap       : wrap;
   flex            : 1 1;
   align-items     : center;
+  justify-content : center;
   border-radius   : 10px;
+  cursor          : pointer;
+  text-align      : center;
 }
 
 @media only screen and (max-width: 600px) {
   .main {
     justify-content: initial;
   }
-  .card1{
-        margin: 0 auto;
-  /* width : 280px; */
+
+  .card1 {
+    margin   : 0 auto;
+    /* width : 280px; */
   }
 
   .cardsContainer {
@@ -193,8 +216,8 @@
   }
 
   .about {
-    width   : initial;
-    overflow: auto;
+    width      : initial;
+    /* overflow: auto; */
   }
 
   .myworks {
@@ -203,7 +226,7 @@
 
   .myworks>ul {
     flex-direction: column;
-    padding       : 10px;
+    padding-bottom: 10px;
     overflow      : initial;
   }
 
@@ -214,12 +237,26 @@
 
 
 .myworks li>* {
-  /* display: flex; */
-  /* flex:1; */
+  display: flex;
+  flex   : 1;
+}
+
+.myworks p {
+  margin: 0;
+}
+
+.myworks img {
+  object-fit: contain;
 }
 
 .myworks li:hover a {
   text-decoration: underline;
+  cursor         : pointer;
+}
+
+.info a {
+  text-decoration: underline;
+  cursor         : pointer;
 }
 
 .myworks .profilePicture {
@@ -304,20 +341,21 @@ transform           : rotateY(360deg) rotateY(360deg); */
 }
 
 .d4_face {
-  position       : absolute;
-  /* width       : 100%;
-height           : 100%; */
-  /* width       : 200px;
-height           : 200px; */
-  text-align     : center;
-  display        : flex;
-  justify-content: center;
-  align-items    : center;
-  border-radius  : 18px;
-  grid-gap       : unset;
-  padding        : 1.2rem;
-  user-select    : none;
-  transition     : all .2s ease-in-out;
+  position             : absolute;
+  /* width             : 100%;
+height                 : 100%; */
+  /* width             : 200px;
+height                 : 200px; */
+  text-align           : center;
+  display              : flex;
+  justify-content      : center;
+  align-items          : center;
+  border-radius        : 18px;
+  grid-gap             : unset;
+  padding              : 1.2rem;
+  /* padding           : 3rem; */
+  user-select          : none;
+  transition           : all .2s ease-in-out;
 }
 
 /* .d4_face:hover{
@@ -332,6 +370,11 @@ height           : 200px; */
   opacity         : 1;
   transform       : rotateY(0deg) translateZ(100px);
 
+}
+
+.cardPadding {
+  padding  : 3rem;
+  font-size: 1.2rem;
 }
 
 .d4_back {

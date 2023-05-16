@@ -121,16 +121,13 @@
 }
 
 .about {
-  padding       : 0 0.5rem;
   display       : flex;
   flex-direction: column;
   grid-column   : 2/4;
   width         : 534px;
-  background    : repeating-linear-gradient(45deg, black, transparent 100px);
-  color         : rgba(255, 255, 255, 0.945);
+  background    : repeating-linear-gradient(45deg, #000, transparent 100px);
+  color         : hsla(0, 0%, 100%, .945);
   overflow      : hidden;
-
-  /* grid-row:1/2; */
 }
 
 .about .container {
@@ -140,11 +137,7 @@
 .about .info {
   margin-top: 0;
   background: #7070706b;
-
-}
-
-.about {
-  /* overflow: auto; */
+  padding   : 0.5rem;
 }
 
 .about .footer>p {

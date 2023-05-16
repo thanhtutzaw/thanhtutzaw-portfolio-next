@@ -17,6 +17,12 @@ export function Myworks() {
       github: "https://github.com/thanhtutzaw/too",
     },
     {
+      title: "facebook",
+      demo: "https://facebook-ui-zee.vercel.app",
+      logo: "https://facebook-ui-zee.vercel.app/favicon.ico",
+      github: "https://github.com/thanhtutzaw/facebook-ui",
+    },
+    {
       title: "GoogleFile UI",
       demo: "https://google-file.vercel.app",
       logo: "https://google-file.vercel.app/favicon.ico",
@@ -34,16 +40,13 @@ export function Myworks() {
       <h2>My Works</h2>
       <ul>
         {works.map((w, index) => (
-          // <li key={index}>
           <Link href={w.demo} key={index}>
-            {/* <a rel="noopener noreferrer" target="_blank"> */}
-            <li>
+            <li title={w.title}>
               <div>
                 <Image
                   width={30}
                   height={30}
-                  alt="w.title"
-                  title={w.title}
+                  alt={w.title}
                   src={w.logo ? w.logo : ""}
                 />
               </div>
@@ -51,18 +54,6 @@ export function Myworks() {
                 <p>{w.title}</p>
               </a>
             </li>
-            {/* </a> */}
-            {/* <Link href={w.github}>
-              <a rel="noopener noreferrer" target="_blank">
-                <Image
-                  width={30}
-                  height={30}
-                  alt="github"
-                  title={`Source Code`}
-                  src="/github-mark-white.png"
-                />
-              </a>
-            </Link> */}
           </Link>
         ))}
       </ul>

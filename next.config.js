@@ -12,6 +12,6 @@ module.exports = {
     defaultLocale: 'en',
   },
   images: {
-    domains: ['todolistzee3.netlify.app', 'too.netlify.app', 'google-file.vercel.app', "utube-next.vercel.app"],
+    domains: ['todolistzee3.netlify.app', 'too.netlify.app', 'facebook-ui-zee.vercel.app', 'google-file.vercel.app', "utube-next.vercel.app"],
   },
 }

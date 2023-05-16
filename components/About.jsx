@@ -22,20 +22,20 @@ export function About({}) {
             }}
           >
             Gmail
-          </a>
+          </a>{" "}
           ,{" "}
           <Link href="https://github.com/thanhtutzaw">
             <a rel="noopener noreferrer" target="_blank">
               GitHub
             </a>
-          </Link>
+          </Link>{" "}
           ,{" "}
           <Link href="https://www.linkedin.com/in/than-htut-zaw-373954213/">
             <a rel="noopener noreferrer" target="_blank">
               Linkedin
             </a>
-          </Link>
-          , or{" "}
+          </Link>{" "}
+          or{" "}
           <Link href="https://t.me/ThanHtutZaw">
             <a rel="noopener noreferrer" target="_blank">
               Telegram
@@ -58,7 +58,6 @@ export function About({}) {
             <br />I hold a Diploma in Web Engineering from METRO and am skilled
             in building high-quality web applications.
           </p>
-          {/* <p>Currently working at Personal Projects</p> */}
           {/* <p>I am currently working as a Frontend Developer at [Company Name].</p> */}
           <p>Currently working at Personal Projects.</p>
           {/* <p>Currently a Frontend Developer at [Company Name].</p> */}

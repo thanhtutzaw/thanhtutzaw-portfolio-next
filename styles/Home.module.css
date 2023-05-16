@@ -177,6 +177,13 @@
   overflow  : hidden;
 }
 
+.myworks>ul:hover li:not(:hover) {
+  opacity          : .4;
+  filter           : grayscale(1);
+  /* mix-blend-mode: multiply; */
+
+}
+
 .myworks li {
   width           : 200px;
   height          : 100%;
@@ -191,6 +198,7 @@
   border-radius   : 10px;
   cursor          : pointer;
   text-align      : center;
+  transition      : all .3s ease-in-out;
 }
 
 @media only screen and (max-width: 600px) {
@@ -234,9 +242,9 @@
   flex   : 1;
 }
 
-.myworks li:hover {
+/* .myworks li:hover {
   opacity: .7;
-}
+} */
 
 .myworks p {
   margin: 0;

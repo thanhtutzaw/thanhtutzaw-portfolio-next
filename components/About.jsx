@@ -61,34 +61,6 @@ export function About({}) {
           {/* <p>I am currently working as a Frontend Developer at [Company Name].</p> */}
           <p>Currently working at Personal Projects.</p>
           {/* <p>Currently a Frontend Developer at [Company Name].</p> */}
-          {/* <p>
-            please feel free to reach out via{" "}
-            <a
-              onClick={() => {
-                gmailModalRef.current.showModal();
-              }}
-            >
-              Gmail
-            </a>
-            {" , "}
-            <Link href="https://github.com/thanhtutzaw">
-              <a rel="noopener noreferrer" target="_blank">
-                Github
-              </a>
-            </Link>
-            {" , "}
-            <Link href="https://www.linkedin.com/in/than-htut-zaw-373954213/">
-              <a rel="noopener noreferrer" target="_blank">
-                Linkedin
-              </a>
-            </Link>{" "}
-            and{" "}
-            <Link href="https://t.me/ThanHtutZaw">
-              <a rel="noopener noreferrer" target="_blank">
-                Telegram
-              </a>
-            </Link>
-          </p> */}
         </div>
         <dialog onClick={closeModal} id="gmailModal" ref={gmailModalRef}>
           {copied && <div style={{ color: "green" }}>✔️ Copied</div>}

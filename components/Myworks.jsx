@@ -19,7 +19,7 @@ export function Myworks() {
     {
       title: "facebook",
       demo: "https://facebook-ui-zee.vercel.app",
-      logo: "https://facebook-ui-zee.vercel.app/favicon.ico",
+      logo: "https://facebook-ui-zee.vercel.app/logo.svg",
       github: "https://github.com/thanhtutzaw/facebook-ui",
     },
     {

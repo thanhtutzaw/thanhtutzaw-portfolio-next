@@ -35,17 +35,15 @@ in Yangon, Myanmar. Tech stacks are React.js, Next.js, Typescript and Firebase .
         />
         <meta property="og:image" content="thanhtutzaw.png" />
         <meta property="og:site_name" content="GitHub" />
-        <meta property="og:type" content="portfolio" />
-        <meta property="og:url" content="https://github.com/thanhtutzaw" />
         <meta property="profile:username" content="thanhtutzaw" />
         <meta
           name="keywords"
           content="thanhtutzaw - Frontend Web Developer , Next.js , thanhtutzaw , React , thz , Yangon , Myanmar , METRO , Japan"
         />
-        <meta
+        {/* <meta
           property="og:image"
           content="https://thz.vercel.app/thanhtutzaw.png"
-        />
+        /> */}
 
         <meta name="title" content="Than Htut Zaw - React DEV" />
         <meta
@@ -62,25 +60,16 @@ in Yangon, Myanmar. Tech stacks are React.js, Next.js, Typescript and Firebase .
           content="Frontend Web Developer . React.js and Next.js Developer based
 in Yangon, Myanmar. Tech stacks are React.js, Next.js, Typescript and Firebase ."
         />
-        <meta property="og:image" content="thanhtutzaw.png" />
+        <meta property="twitter:url" content="https://thz.vercel.app" />
 
-        {/* <meta property="twitter:image" content="thanhtutzaw.png" /> */}
-        <meta property="twitter:url" content="https://thz.vercel.app/" />
-
-        <meta
-          name="twitter:card"
-          content="https://thz.vercel.app/thanhtutzaw.png"
-        />
+        <meta name="twitter:card" content="thanhtutzaw.png" />
         <meta name="twitter:title" content="Than Htut Zaw - React DEV" />
         <meta
           name="twitter:description"
           content="Frontend Web Developer . React.js and Next.js Developer based
 in Yangon, Myanmar. Tech stacks are React.js, Next.js, Typescript and Firebase ."
         />
-        <meta
-          name="twitter:image"
-          content="https://thz.vercel.app/thanhtutzaw.png"
-        />
+        <meta name="twitter:image" content="thanhtutzaw.png" />
 
         <link rel="icon" href="/favicon.ico" />
       </Head>

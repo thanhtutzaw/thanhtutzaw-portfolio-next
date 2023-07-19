@@ -33,7 +33,7 @@ export default function Home() {
           content="Frontend Web Developer . React.js and Next.js Developer based
 in Yangon, Myanmar. Tech stacks are React.js, Next.js, Typescript and Firebase ."
         />
-        <meta property="og:image" content="thanhtutzaw.png" />
+        <meta property="og:image" content="https://thz.vercel.app/thanhtutzaw.png" />
         <meta property="og:site_name" content="GitHub" />
         <meta property="profile:username" content="thanhtutzaw" />
         <meta
@@ -62,14 +62,14 @@ in Yangon, Myanmar. Tech stacks are React.js, Next.js, Typescript and Firebase .
         />
         <meta property="twitter:url" content="https://thz.vercel.app" />
 
-        <meta name="twitter:card" content="thanhtutzaw.png" />
+        <meta name="twitter:card" content="https://thz.vercel.app/thanhtutzaw.png" />
         <meta name="twitter:title" content="Than Htut Zaw - React DEV" />
         <meta
           name="twitter:description"
           content="Frontend Web Developer . React.js and Next.js Developer based
 in Yangon, Myanmar. Tech stacks are React.js, Next.js, Typescript and Firebase ."
         />
-        <meta name="twitter:image" content="thanhtutzaw.png" />
+        <meta name="twitter:image" content="https://thz.vercel.app/thanhtutzaw.png" />
 
         <link rel="icon" href="/favicon.ico" />
       </Head>

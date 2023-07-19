@@ -26,17 +26,42 @@ export default function Home() {
         <meta
           name="description"
           content="Frontend Web Developer Portfolio. React.js and Next.js Developer based
-in Yangon, Myanmar. Tech stack include React, Typescript, Cloud Firestore, Firebase and Next.js"
+in Yangon, Myanmar. Tech stacks are React.js, Next.js, Typescript and Firebase "
         />
-        <meta property="og:image" content="thanhtutzaw.png"></meta>
-        <meta property="og:site_name" content="GitHub"></meta>
-        <meta property="og:type" content="portfolio"></meta>
-        <meta property="og:url" content="https://github.com/thanhtutzaw"></meta>
-        <meta property="profile:username" content="thanhtutzaw"></meta>
+        <meta property="og:image" content="thanhtutzaw.png" />
+        <meta property="og:site_name" content="GitHub" />
+        <meta property="og:type" content="portfolio" />
+        <meta property="og:url" content="https://github.com/thanhtutzaw" />
+        <meta property="profile:username" content="thanhtutzaw" />
         <meta
           name="keywords"
           content="thanhtutzaw - Frontend Web Developer , Next.js , thanhtutzaw , React , thz , Yangon , Myanmar , METRO , Japan"
         />
+
+        <meta name="title" content="Than Htut Zaw - React DEV" />
+        <meta
+          name="description"
+          content="Frontend Web Developer Portfolio. React.js and Next.js Developer based in Yangon, Myanmar. Tech stack include React, Typescript, Cloud Firestore, Firebase and Next.js"
+        />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://thz.vercel.app/" />
+        <meta property="og:title" content="Than Htut Zaw - React DEV" />
+        <meta
+          property="og:description"
+          content="Frontend Web Developer Portfolio. React.js and Next.js Developer based in Yangon, Myanmar. Tech stack include React, Typescript, Cloud Firestore, Firebase and Next.js"
+        />
+        <meta property="og:image" content="thanhtutzaw.png" />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://thz.vercel.app/" />
+        <meta property="twitter:title" content="Than Htut Zaw - React DEV" />
+        <meta
+          property="twitter:description"
+          content="Frontend Web Developer Portfolio. React.js and Next.js Developer based in Yangon, Myanmar. Tech stack include React, Typescript, Cloud Firestore, Firebase and Next.js"
+        />
+        <meta property="twitter:image" content="thanhtutzaw.png" />
+
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

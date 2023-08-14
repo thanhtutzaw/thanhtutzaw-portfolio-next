@@ -65,7 +65,7 @@ export function About({}) {
           {/* <p>Currently a Frontend Developer at [Company Name].</p> */}
         </div>
         <dialog onClick={closeModal} id="gmailModal" ref={gmailModalRef}>
-          {gmailModalRef.current.open && (
+          {gmailModalRef.current.hasAttribute("open") && (
             <>
               {copied && <div style={{ color: "green" }}>✔️ Copied</div>}
               <p>zgyi5025@gmail.com</p>

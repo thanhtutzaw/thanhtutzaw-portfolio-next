@@ -40,8 +40,8 @@ export function Myworks() {
       <h2>My Works</h2>
       <ul>
         {works.map((w, index) => (
-          <Link href={w.demo} key={index}>
-            <li title={w.title}>
+          <li title={w.title} key={index}>
+            <a rel="noopener noreferrer" target="_blank" href={w.demo}>
               <div>
                 <Image
                   width={30}
@@ -50,11 +50,9 @@ export function Myworks() {
                   src={w.logo ? w.logo : ""}
                 />
               </div>
-              <a rel="noopener noreferrer" target="_blank">
-                <p>{w.title}</p>
-              </a>
-            </li>
-          </Link>
+              <p>{w.title}</p>
+            </a>
+          </li>
         ))}
       </ul>
     </div>

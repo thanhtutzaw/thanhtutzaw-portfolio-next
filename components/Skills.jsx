@@ -2,7 +2,7 @@ import styles from "../styles/Home.module.css";
 
 export function Skills({ mounted }) {
   return (
-    <div className={`${styles.card} ${styles.card4}`}>
+    <div className={`${styles.card} ${styles.skill}`}>
       <div
         className={`${styles.d4_face} ${styles.d4_front} ${
           mounted ? styles.cardPadding : ""

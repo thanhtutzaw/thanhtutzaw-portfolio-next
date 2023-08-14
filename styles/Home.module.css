@@ -68,7 +68,7 @@
   object-fit: contain;
 }
 
-.card1 {
+.picture {
   grid-column: 1/2;
   grid-row   : 1/2;
   position   : relative;
@@ -174,22 +174,36 @@
   font-size : 18px;
   margin    : 0;
   padding   : 0;
-  overflow  : hidden;
+  overflow  : initial;
+}
+
+.myworks>ul:hover li:is(:hover) {
+  scale           : 1.1;
+  transform-origin: bottom;
+
 }
 
 .myworks>ul:hover li:not(:hover) {
-  opacity            : .5;
-  filter             : grayscale(1);
-  filter             : blur(5px);
-    /* mix-blend-mode: multiply; */
+  opacity          : .5;
+  filter           : grayscale(1);
+  filter           : blur(5px);
+  /* mix-blend-mode: multiply; */
 
 }
 
 .myworks li {
-  width           : 200px;
+
+  width: 200px;
+  transition: all .2s ease-in-out,
+    scale .1s ease-in-out;
+  cursor    : pointer;
+  text-align: center;
+}
+
+.myworks li>a {
+  padding         : 1rem 0.5rem;
   height          : 100%;
   background-color: rgba(255, 255, 255, 0.357);
-  padding         : 1rem 0.5rem;
   display         : flex;
   flex-direction  : column;
   flex-wrap       : wrap;
@@ -197,17 +211,16 @@
   align-items     : center;
   justify-content : center;
   border-radius   : 10px;
-  cursor          : pointer;
-  text-align      : center;
-  transition      : all .3s ease-in-out;
+
 }
 
 @media only screen and (max-width: 600px) {
   .main {
-    justify-content: initial;
+    /* justify-content: initial; */
+    /* border         : 4px solid orange; */
   }
 
-  .card1 {
+  .picture {
     margin   : 0 auto;
     /* width : 280px; */
   }
@@ -239,9 +252,22 @@
 
 
 .myworks li>* {
+  display       : flex;
+  flex          : 1;
+  flex-direction: column;
+  align-items   : center;
+}
+
+.myworks li>a>* {
   display: flex;
   flex   : 1;
 }
+
+/* 
+.myworks li>a>img {
+  display: flex;
+  flex   : 1;
+} */
 
 /* .myworks li:hover {
   opacity: .7;
@@ -269,7 +295,7 @@
   max-width: 100%;
 }
 
-.card4 {
+.skill {
 
   /* outline: 2px solid red; */
   grid-column       : 3/4;
@@ -291,57 +317,41 @@ transform           : rotateY(360deg) rotateY(360deg); */
   animation: spin 5s infinite ease-in-out;
 }
 
-.card4:hover {
-  /* animation         : spin 15s infinite ease-in-out; */
-  /* transition-delay: 1; */
-  /* animation-duration: 5s; */
-  /* animation: spin 6s; */
-  /* transition-duration: 1s; */
-
+.skill:hover {
+  outline      : initial;
+  /* box-shadow: 0 0px 10px red; */
+  /* filter    : blur(10px) */
 }
 
-.main:hover,
-.card4 {
-  /* animation-play-state: running; */
-}
-
-/* .myworks:hover , .card4 {
-  animation-play-state: paused;
-} */
-
-.animate {
-  /* transform: rotateY(349deg) rotateX(315deg); */
-  /* animation: spin 5s infinite ease-in-out; */
-}
-
+/* translateZ(-100px) */
 @keyframes spin {
   0% {
-    transform: translateZ(-100px) rotateX(0deg) rotateY(0deg);
+    transform: rotateX(0deg) rotateY(0deg);
   }
 
   27% {
-    transform: translateZ(-100px) rotateX(90deg);
+    transform: rotateX(90deg);
   }
 
   45% {
-    transform: translateZ(-100px) rotateX(180deg);
+    transform: rotateX(180deg);
   }
 
   65% {
-    transform   : translateZ(-100px) rotateX(-90deg);
-    /* transform:  translateZ(-100px) rotateX(-180deg); */
+    transform: rotateX(-90deg);
   }
 
   85% {
-    transform   : translateZ(-100px) rotateY(-90deg);
-    /* transform: translateZ(-100px) rotateY(-90deg); */
+    transform: rotateY(-90deg);
+  }
+
+  95% {
+    transform   : rotateY(-1.13turn);
     /* transform: translateZ(-100px) rotateX(360deg) rotateY(360deg); */
   }
 
   100% {
-    transform   : translateZ(-100px) rotateY(-360deg);
-    /* transform: translateZ(-100px) rotateY(-90deg); */
-    /* transform: translateZ(-100px) rotateY(-90deg); */
+    transform   : rotateY(-1turn);
     /* transform: translateZ(-100px) rotateX(360deg) rotateY(360deg); */
   }
 }

@@ -5,7 +5,7 @@ import { useState } from "react";
 
 export function Picture({ mounted, setMounted, image }) {
   return (
-    <div className={`${styles.card} ${styles.card1}`}>
+    <div className={`${styles.card} ${styles.picture}`}>
       <Image
         style={{ zIndex: "1" }}
         priority

@@ -52,27 +52,33 @@ export function About({}) {
         </p>
         <div className={styles.footer}>
           <p>
-            Hi, I&apos;m Than Htut Zaw - a Frontend Developer specializing in
-            React.js
+            Hey there, I&apos;m Than Htut Zaw – a React.js specialist with a
+            focus on frontend development
             <br />
-            <br />I hold a Diploma in Web Engineering from METRO and am skilled
-            in building high-quality web applications.
+            {/* Diploma in Web Engineering from METRO and am skilled in building
+            high-quality web applications. */}
+            <br />I hold a Diploma in Web Engineering from METRO and excel at
+            crafting top-notch web applications.
           </p>
           {/* <p>I am currently working as a Frontend Developer at [Company Name].</p> */}
           <p>Currently working at Personal Projects.</p>
           {/* <p>Currently a Frontend Developer at [Company Name].</p> */}
         </div>
         <dialog onClick={closeModal} id="gmailModal" ref={gmailModalRef}>
-          {copied && <div style={{ color: "green" }}>✔️ Copied</div>}
-          <p>zgyi5025@gmail.com</p>
-          <button
-            onClick={() => {
-              navigator.clipboard.writeText("zgyi5025@gmail.com");
-              setcopied(true);
-            }}
-          >
-            Copy
-          </button>
+          {gmailModalRef.current.open && (
+            <>
+              {copied && <div style={{ color: "green" }}>✔️ Copied</div>}
+              <p>zgyi5025@gmail.com</p>
+              <button
+                onClick={() => {
+                  navigator.clipboard.writeText("zgyi5025@gmail.com");
+                  setcopied(true);
+                }}
+              >
+                Copy
+              </button>
+            </>
+          )}
         </dialog>
       </div>
     </div>

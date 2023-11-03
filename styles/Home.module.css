@@ -37,7 +37,6 @@
 
 .cardsContainer {
   /* grid-auto-rows       : 115%; */
-  /* list-style                    : none; */
   display                       : grid;
   /* min-width                  : 50%; */
   /* grid-template-columns      :  repeat(2, 1.2fr) ; */
@@ -46,21 +45,18 @@
   grid-gap                      : 1rem;
   grid-template-columns         : 2fr 2fr 2fr;
   grid-template-rows            : repeat(2, 1fr);
-  /* padding                    : 0; */
-  /* padding                    : 2rem; */
   padding                       : 0;
 }
 
-.card {
-  display             : grid;
-  place-items         : center;
-  align-items         : center;
-  /* width            : 100%; */
-  height              : 256px;
-  border-radius       : 20px;
+.cardsContainer>div {
+  display      : grid;
+  place-items  : center;
+  align-items  : center;
+  height       : 256px;
+  border-radius: 20px;
 }
 
-.card:hover {
+.cardsContainer>div:hover:not(.skill) {
   outline: 4px solid rebeccapurple;
 }
 
@@ -72,23 +68,16 @@
   grid-column: 1/2;
   grid-row   : 1/2;
   position   : relative;
-
-  /* overflow   : hidden; */
   width      : 256px;
   user-select: none;
 }
 
 .rotater {
-  /* width                                : 356px; */
-  width                                : 256px;
-  height                               : 256px;
-  /* position                          : fixed; */
-  position                             : absolute;
-  /* z-index                           : -11; */
-
-  animation       : 1.3s rotate .6s forwards ease-in-out;
-  /* background   : red; */
-  border-radius   : 20px;
+  width        : 256px;
+  height       : 256px;
+  position     : absolute;
+  animation    : 1.3s rotate .6s forwards ease-in-out;
+  border-radius: 20px;
 }
 
 @keyframes rotate {
@@ -356,7 +345,11 @@ transform           : rotateY(360deg) rotateY(360deg); */
   }
 }
 
-.d4_face {
+.skill:hover {
+  animation-play-state: paused;
+}
+
+.skill>* {
   position             : absolute;
   /* width             : 100%;
 height                 : 100%; */
@@ -364,40 +357,49 @@ height                 : 100%; */
 height                 : 200px; */
   text-align           : center;
   display              : flex;
+  flex-direction       : column;
   justify-content      : center;
   align-items          : center;
   border-radius        : 18px;
   grid-gap             : unset;
   padding              : 1.2rem;
-  /* padding           : 3rem; */
   user-select          : none;
   transition           : all .2s ease-in-out;
-}
-
-/* .d4_face:hover{
-
-  scale:1.2;
-  transition: all .4s ease-in-out;
-} */
-
-.d4_front {
-  background-color: var(--primary-bg);
-  color           : white;
-  opacity         : 1;
-  transform       : rotateY(0deg) translateZ(100px);
+  gap                  : 5px;
 
 }
+
+
 
 .cardPadding {
   padding  : 3rem;
   font-size: 1.2rem;
 }
 
+.d4_front {
+  background-color   : var(--primary-bg);
+  color              : white;
+  opacity            : 1;
+  transform          : rotateY(0deg) translateZ(100px);
+  filter             : blur(10);
+  backdrop-filter    : blur(20);
+  /* background      : #fc035e83; */
+  /* background      : rgba(252, 3, 94, 0.562); */
+  backdrop-filter    : blur(4px);
+
+}
+
 .d4_back {
-  background-color: #0328fc;
-  color           : white;
-  opacity         : 1;
-  transform       : rotateY(90deg) translateZ(100px);
+  /* background-color: #0328fc; */
+  color    : white;
+  opacity  : 1;
+  transform: rotateY(90deg) translateZ(100px);
+
+  background-color: rgb(27 27 27 / 60%);
+
+  backdrop-filter : blur(13px);
+  background-color: rgb(27 27 27 / 16%);
+  border          : 1px solid rgba(0, 0, 0, 0.247)
 }
 
 .d4_right {

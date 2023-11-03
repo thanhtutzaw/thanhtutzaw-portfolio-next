@@ -12,7 +12,7 @@ export function About({}) {
     }
   }
   return (
-    <div className={`${styles.card} ${styles.about}`}>
+    <div className={`${styles.about}`}>
       <div className={styles.container}>
         <p className={styles.info}>
           Let&apos;s connect on{" "}

@@ -1,11 +1,10 @@
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
 import Link from "next/link";
-import { useState } from "react";
+import styles from "../styles/Home.module.css";
 
 export function Picture({ mounted, setMounted, image }) {
   return (
-    <div className={`${styles.card} ${styles.picture}`}>
+    <div className={`${styles.picture}`}>
       <Image
         style={{ zIndex: "1" }}
         priority

@@ -36,7 +36,7 @@ export function Myworks() {
     },
   ];
   return (
-    <div className={`${styles.card} ${styles.myworks}`}>
+    <div className={`${styles.myworks}`}>
       <h2>My Works</h2>
       <ul>
         {works.map((w, index) => (

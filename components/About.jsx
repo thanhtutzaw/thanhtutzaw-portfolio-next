@@ -16,13 +16,11 @@ export function About({}) {
       <div className={styles.container}>
         <p className={styles.info}>
           Let&apos;s connect on{" "}
-          <a
-            onClick={() => {
-              gmailModalRef.current.showModal();
-            }}
-          >
-            Gmail
-          </a>{" "}
+          <Link href="mailto:zgi5025@gmail.com">
+            <a rel="noopener noreferrer" target="_blank">
+              Gmail
+            </a>
+          </Link>{" "}
           ,{" "}
           <Link href="https://github.com/thanhtutzaw">
             <a rel="noopener noreferrer" target="_blank">

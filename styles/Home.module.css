@@ -345,7 +345,7 @@ transform           : rotateY(360deg) rotateY(360deg); */
   }
 }
 
-.skill:hover {
+.skill:active {
   animation-play-state: paused;
 }
 

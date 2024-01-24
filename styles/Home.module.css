@@ -8,18 +8,6 @@
   overflow       : hidden;
 }
 
-/* 
-.main::before {
-  content   : '';
-  position  : absolute;
-  width     : 500px;
-  height    : 500px;
-  right     : 0;
-  left      : 0;
-  background: rgba(255, 255, 255, 0.32);
-  filter    : blur(100px);
-} */
-
 .resumeLink {
   background-color: black;
   font-size       : 15px;
@@ -64,7 +52,7 @@
   display      : grid;
   place-items  : center;
   align-items  : center;
-  min-height   : 256px;
+  height       : 256px;
   border-radius: 20px;
 }
 
@@ -152,12 +140,13 @@
 }
 
 .myworks {
-  grid-column   : 1/3;
-  grid-row      : 2/2;
-  /* overflow   : hidden; */
-  /* overflow-y : scroll; */
-  overflow-x    : hidden;
-  position      : relative;
+  grid-column     : 1/3;
+  grid-row        : 2/2;
+  /* overflow     : hidden; */
+  /* overflow-y   : scroll; */
+  overflow-x      : hidden;
+  position        : relative;
+  scroll-snap-type: y mandatory;
 
 }
 
@@ -177,7 +166,7 @@
   margin: 0;
 }
 
-.myworks>ul {
+.myworks ul {
   height    : 150px;
   display   : flex;
   max-width : 495px;
@@ -207,14 +196,17 @@
 }
 
 .myworks li {
-
-  width: 200px;
-  transition: all .2s ease-in-out,
+  scroll-snap-align: center;
+  width            : 200px;
+  transition       : all .2s ease-in-out,
     scale .1s ease-in-out;
-  cursor             : pointer;
-  text-align         : center;
-  border-radius      : 10px;
-  background-color   : rgba(255, 255, 255, 0.357);
+  cursor          : pointer;
+  text-align      : center;
+  background-color: rgba(255, 255, 255, 0.357);
+  border-radius   : 10px;
+}
+
+.myworks li>a {
   padding            : 1rem 0.5rem;
   height             : 100%;
   /* background-color: rgba(255, 255, 255, 0.357); */
@@ -224,18 +216,44 @@
   flex               : 1 1;
   align-items        : center;
   justify-content    : center;
+
 }
 
+@keyframes activeWorkLink {
+  from {
+    scale : 1;
+    filter: blur(0px);
+  }
+}
+
+@keyframes scaleProfile {
+  from {
+    scale: .5;
+
+  }
+}
 
 @media only screen and (max-width: 600px) {
-  .main {
-    /* justify-content: initial; */
-    /* border         : 4px solid orange; */
+  @media (prefers-reduced-motion: no-preference) {
+    @supports (animation-timeline: view()) {
+      .myworks li {
+        filter            : blur(10px);
+        animation         : activeWorkLink linear both;
+        animation-timeline: view();
+        scale             : .3;
+        animation-range   : 20vh 80vh;
+      }
+    }
+  }
+
+  .about {
+    height: initial !important;
+    width : 90vw !important;
   }
 
   .picture {
-    margin   : 0 auto;
     /* width : 280px; */
+    margin: 0 auto;
   }
 
   .cardsContainer {

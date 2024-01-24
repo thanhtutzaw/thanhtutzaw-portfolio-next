@@ -8,6 +8,18 @@
   overflow       : hidden;
 }
 
+/* 
+.main::before {
+  content   : '';
+  position  : absolute;
+  width     : 500px;
+  height    : 500px;
+  right     : 0;
+  left      : 0;
+  background: rgba(255, 255, 255, 0.32);
+  filter    : blur(100px);
+} */
+
 .resumeLink {
   background-color: black;
   font-size       : 15px;
@@ -52,7 +64,7 @@
   display      : grid;
   place-items  : center;
   align-items  : center;
-  height       : 256px;
+  min-height   : 256px;
   border-radius: 20px;
 }
 
@@ -145,7 +157,20 @@
   /* overflow   : hidden; */
   /* overflow-y : scroll; */
   overflow-x    : hidden;
+  position      : relative;
 
+}
+
+.myworks::before {
+  content      : '';
+  position     : absolute;
+  width        : 200px;
+  height       : 200px;
+  background   : rgb(255, 195, 195);
+  right        : 20px;
+  top          : 0;
+  border-radius: 20px;
+  filter       : blur(80px);
 }
 
 .myworks h2 {
@@ -164,6 +189,7 @@
   margin    : 0;
   padding   : 0;
   overflow  : initial;
+  z-index   : 1;
 }
 
 .myworks>ul:hover li:is(:hover) {
@@ -185,23 +211,21 @@
   width: 200px;
   transition: all .2s ease-in-out,
     scale .1s ease-in-out;
-  cursor    : pointer;
-  text-align: center;
+  cursor             : pointer;
+  text-align         : center;
+  border-radius      : 10px;
+  background-color   : rgba(255, 255, 255, 0.357);
+  padding            : 1rem 0.5rem;
+  height             : 100%;
+  /* background-color: rgba(255, 255, 255, 0.357); */
+  display            : flex;
+  flex-direction     : column;
+  flex-wrap          : wrap;
+  flex               : 1 1;
+  align-items        : center;
+  justify-content    : center;
 }
 
-.myworks li>a {
-  padding         : 1rem 0.5rem;
-  height          : 100%;
-  background-color: rgba(255, 255, 255, 0.357);
-  display         : flex;
-  flex-direction  : column;
-  flex-wrap       : wrap;
-  flex            : 1 1;
-  align-items     : center;
-  justify-content : center;
-  border-radius   : 10px;
-
-}
 
 @media only screen and (max-width: 600px) {
   .main {

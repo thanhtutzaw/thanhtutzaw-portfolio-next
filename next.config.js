@@ -12,6 +12,37 @@ module.exports = {
     defaultLocale: 'en',
   },
   images: {
-    domains: ['raw.githubusercontent.com', 'todolistzee3.netlify.app', 'too.netlify.app', 'facebook-ui-zee.vercel.app', 'google-file.vercel.app', "utube-next.vercel.app"],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'raw.githubusercontent.com',
+        port: '',
+      },
+      {
+        protocol: 'https',
+        hostname: 'todolistzee3.netlify.app',
+        port: '',
+      },
+      {
+        protocol: 'https',
+        hostname: 'too.netlify.app',
+        port: '',
+      },
+      {
+        protocol: 'https',
+        hostname: 'facebook-ui-zee.vercel.app',
+        port: '',
+      },
+      {
+        protocol: 'https',
+        hostname: 'google-file.vercel.app',
+        port: '',
+      },
+      {
+        protocol: 'https',
+        hostname: 'utube-next.vercel.app',
+        port: '',
+      },
+    ],
   },
 }

@@ -1,7 +1,5 @@
-/* eslint-disable @next/next/no-html-link-for-pages */
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import { useRouter } from "next/router";
 import Link from "next/link";
 const works = [
   {
@@ -40,7 +38,6 @@ const works = [
   },
 ];
 export function Myworks() {
-  const router = useRouter();
   return (
     <div className={`${styles.myworks}`}>
       <h2>My Works</h2>

@@ -38,6 +38,7 @@
   padding                       : 0;
 }
 
+
 .cardsContainer>div {
   display      : grid;
   place-items  : center;
@@ -46,20 +47,71 @@
   border-radius: 20px;
 }
 
+
+/* .cardsContainer[data-mounted="false"]>div,
+.picture .profilePicture {
+  border-radius: 100px;
+} */
+
+/* .cardsContainer[data-mounted="true"]>div:where(.cardsContainer>div, .picture .profilePicture) {
+  transition   : border-radius .1s ease-in-out;
+  border-radius: 20px !important;
+
+} */
+.cardsContainer>div,
+.profilePicture {
+  transition: border-radius .1s ease-out;
+}
+
+@keyframes borderAnimate {
+  0% {
+    border-radius: 20px;
+  }
+
+  20% {
+    border-radius: 90px;
+  }
+
+  100% {
+    border-radius: 20px;
+  }
+}
+
+/* .cardsContainer[data-mounted="false"]:where(.cardsContainer>div, .profilePicture) {
+  border-radius: 100px !important;
+} */
+.cardsContainer[data-mounted="false"]>div:not(:last-child) {
+  animation: 1s borderAnimate both;
+}
+
+.cardsContainer[data-mounted="false"] div .profilePicture {
+  animation: 1s borderAnimate both;
+}
+
+/* 
+.cardsContainer[data-mounted="false"]>div:where(.cardsContainer>div, .picture .profilePicture) {
+  transition   : border-radius .1s ease-in-out;
+  border-radius: 100px !important;
+} */
+
 .cardsContainer>div:hover:not(.skill) {
   outline: 4px solid rebeccapurple;
 }
 
 .profilePicture {
-  object-fit: contain;
+  object-fit   : contain;
+  border-radius: 20px;
+  max-width    : 100%;
 }
 
 .picture {
-  grid-column: 1/2;
-  grid-row   : 1/2;
-  position   : relative;
-  width      : 256px;
-  user-select: none;
+  border-radius   : 20px;
+  grid-column     : 1/2;
+  grid-row        : 1/2;
+  position        : relative;
+  width           : 256px;
+  user-select     : none;
+  /* overflow     : hidden; */
 }
 
 .rotater {
@@ -303,9 +355,6 @@
   cursor         : pointer;
 }
 
-.myworks .profilePicture {
-  max-width: 100%;
-}
 
 .skill {
 

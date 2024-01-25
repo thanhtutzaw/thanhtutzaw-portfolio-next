@@ -84,7 +84,7 @@ in Yangon, Myanmar. Tech stacks are React.js, Next.js, Typescript and Firebase .
       </Head>
 
       <main>
-        <div className={styles.cardsContainer}>
+        <div data-mounted={mounted} className={styles.cardsContainer}>
           <Picture mounted={mounted} setMounted={setMounted} image={image} />
           <About />
           <Myworks />

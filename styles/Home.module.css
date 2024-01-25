@@ -322,8 +322,7 @@
     }
 
     /* 
-      .myworks li {
-        filter            : blur(10px);
+        
         animation         : activeWorkLink linear both;
         animation-timeline: view();
         scale             : .3;

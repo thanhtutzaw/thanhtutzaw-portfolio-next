@@ -6,14 +6,15 @@ export function Picture({ mounted, setMounted, image }) {
   return (
     <div className={`${styles.picture}`}>
       <Image
-        style={{ zIndex: "1" }}
         priority
+        placeholder="blur"
+        style={{ zIndex: "1" }}
         className={styles.profilePicture}
         width={256}
         height={256}
-        layout="fixed"
+        // fill
         src={image}
-        alt="my face"
+        alt="thanhtutzaw's photo"
       />
       <span
         onAnimationEnd={() => {
@@ -32,9 +33,7 @@ export function Picture({ mounted, setMounted, image }) {
             "https://docs.google.com/document/d/1YTJpGv03D44GieELhkUlbbzpIIBYY6MSR25vvy51IzQ/edit?usp=sharing"
           }
         >
-          <a rel="noopener noreferrer" target="_blank">
-            View Resume
-          </a>
+          View Resume
         </Link>
       </div>
     </div>

@@ -1,29 +1,42 @@
 html,
 body {
   padding: 0;
-  margin: 0;
+  margin : 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+main {
+  min-height     : 100vh;
+  background     : linear-gradient(19deg, #1400ff, #06123b);
+  display        : grid;
+  justify-content: center;
+  align-items    : center;
+  padding        : 3rem;
+  overflow       : hidden;
+}
+
 a {
-  color: inherit;
+  color          : inherit;
   text-decoration: none;
 }
 
 * {
-  box-sizing: border-box;
-  --primary-bg: #FC035E;
+  box-sizing    : border-box;
+  --primary-bg  : #FC035E;
   --secondary-bg: #0328fc;
 }
-body{
-  color:white;
+
+body {
+  color: white;
 }
-dialog#gmailModal{
+
+dialog#gmailModal {
   border-radius: 1rem;
-  border:5px solid var(--primary-bg);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.486);
+  border       : 5px solid var(--primary-bg);
+  box-shadow   : 0 4px 10px rgba(0, 0, 0, 0.486);
 }
+
 @media (prefers-color-scheme: dark) {
   /* html {
     color-scheme: dark;

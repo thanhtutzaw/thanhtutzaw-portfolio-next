@@ -16,28 +16,23 @@ export function About({}) {
       <div className={styles.container}>
         <p className={styles.info}>
           Let&apos;s connect on{" "}
-          <Link href="mailto:zgi5025@gmail.com">
-            <a rel="noopener noreferrer" target="_blank">
-              Gmail
-            </a>
+          <Link href="mailto:zgi5025@gmail.com" target="_blank">
+            Gmail
           </Link>{" "}
           ,{" "}
-          <Link href="https://github.com/thanhtutzaw">
-            <a rel="noopener noreferrer" target="_blank">
-              GitHub
-            </a>
+          <Link target="_blank" href="https://github.com/thanhtutzaw">
+            GitHub
           </Link>{" "}
           ,{" "}
-          <Link href="https://www.linkedin.com/in/than-htut-zaw-373954213/">
-            <a rel="noopener noreferrer" target="_blank">
-              Linkedin
-            </a>
+          <Link
+            target="_blank"
+            href="https://www.linkedin.com/in/than-htut-zaw-373954213/"
+          >
+            Linkedin
           </Link>{" "}
           or{" "}
-          <Link href="https://t.me/ThanHtutZaw">
-            <a rel="noopener noreferrer" target="_blank">
-              Telegram
-            </a>
+          <Link target="_blank" href="https://t.me/ThanHtutZaw">
+            Telegram
           </Link>{" "}
           to chat more about your project needs!
           {/* <span style={{ fontSize: "25px", fontFamily: "serif" }}>I</span> am a */}

@@ -1,76 +1,24 @@
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
-
+import s from "../styles/Home.module.css";
+const skills = [
+  { label: "React.js", imageURL: "/assets/react.svg", id: "front" },
+  { label: "Next.js", imageURL: "/assets/nextjs.svg", id: "back" },
+  { label: "SASS", imageURL: "/assets/sass.svg", id: "right" },
+  { label: "TypeScript", imageURL: "/assets/typescript.svg", id: "left" },
+  { label: "Firebase", imageURL: "/assets/firebase.svg", id: "top" },
+  { label: "Nest", imageURL: "", id: "bottom" },
+];
 export function Skills({ mounted }) {
   return (
-    <div className={`${styles.skill}`}>
-      <div
-        className={`${styles.d4_front} ${
-          mounted ? styles.cardPadding : ""
-        }`}
-      >
-        <Image
-          width={40}
-          height={40}
-          alt="React.js"
-          src="/assets/react.svg"
-        ></Image>
-        React.js
-      </div>
-      <div
-        className={`${styles.d4_back} ${
-          mounted ? styles.cardPadding : ""
-        }`}
-      >
-        <Image
-          width={40}
-          height={40}
-          alt="React.js"
-          src="/assets/nextjs.svg"
-        ></Image>
-        Next.js
-      </div>
-      <div
-        className={`${styles.d4_right} ${
-          mounted ? styles.cardPadding : ""
-        }`}
-      >
-        <Image width={40} height={40} alt="SASS" src="/assets/sass.svg"></Image>
-        SASS
-      </div>
-      <div
-        className={`${styles.d4_left} ${
-          mounted ? styles.cardPadding : ""
-        }`}
-      >
-        <Image
-          width={40}
-          height={40}
-          alt="TypeScript"
-          src="/assets/typescript.svg"
-        ></Image>
-        TypeScript
-      </div>
-      <div
-        className={`${styles.d4_top} ${
-          mounted ? styles.cardPadding : ""
-        }`}
-      >
-        <Image
-          width={40}
-          height={40}
-          alt="Firebase"
-          src="/assets/firebase.svg"
-        ></Image>
-        Firebase
-      </div>
-      <div
-        className={`${styles.d4_bottom} ${
-          mounted ? styles.cardPadding : ""
-        }`}
-      >
-        Nest
-      </div>
+    <div data-mounted={mounted} className={`${s.skill}`}>
+      {skills.map(({ id, label, imageURL }) => (
+        <div id={id} key={id} className={`${s[id]}`}>
+          {imageURL && (
+            <Image width={40} height={40} alt={label} src={imageURL} />
+          )}
+          {label}
+        </div>
+      ))}
     </div>
   );
 }

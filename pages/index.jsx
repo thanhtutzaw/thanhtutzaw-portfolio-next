@@ -83,7 +83,7 @@ in Yangon, Myanmar. Tech stacks are React.js, Next.js, Typescript and Firebase .
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
+      <main>
         <div className={styles.cardsContainer}>
           <Picture mounted={mounted} setMounted={setMounted} image={image} />
           <About />

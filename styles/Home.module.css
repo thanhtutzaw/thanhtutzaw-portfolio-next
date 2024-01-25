@@ -47,17 +47,6 @@
   border-radius: 20px;
 }
 
-
-/* .cardsContainer[data-mounted="false"]>div,
-.picture .profilePicture {
-  border-radius: 100px;
-} */
-
-/* .cardsContainer[data-mounted="true"]>div:where(.cardsContainer>div, .picture .profilePicture) {
-  transition   : border-radius .1s ease-in-out;
-  border-radius: 20px !important;
-
-} */
 .cardsContainer>div,
 .profilePicture {
   transition: border-radius .1s ease-out;
@@ -77,22 +66,13 @@
   }
 }
 
-/* .cardsContainer[data-mounted="false"]:where(.cardsContainer>div, .profilePicture) {
-  border-radius: 100px !important;
-} */
-.cardsContainer[data-mounted="false"]>div:not(:last-child) {
+.cardsContainer[data-mounted="false"]>div:not(:last-child, :first-child) {
   animation: 1s borderAnimate both;
 }
 
-.cardsContainer[data-mounted="false"] div .profilePicture {
+.cardsContainer[data-mounted="false"] .profilePicture {
   animation: 1s borderAnimate both;
 }
-
-/* 
-.cardsContainer[data-mounted="false"]>div:where(.cardsContainer>div, .picture .profilePicture) {
-  transition   : border-radius .1s ease-in-out;
-  border-radius: 100px !important;
-} */
 
 .cardsContainer>div:hover:not(.skill) {
   outline: 4px solid rebeccapurple;
@@ -105,13 +85,12 @@
 }
 
 .picture {
-  border-radius   : 20px;
-  grid-column     : 1/2;
-  grid-row        : 1/2;
-  position        : relative;
-  width           : 256px;
-  user-select     : none;
-  /* overflow     : hidden; */
+  border-radius: 20px;
+  grid-column  : 1/2;
+  grid-row     : 1/2;
+  position     : relative;
+  width        : 256px;
+  user-select  : none;
 }
 
 .rotater {
@@ -204,12 +183,12 @@
   filter       : blur(80px);
 }
 
+
 .myworks h2 {
   margin: 0;
 }
 
 .myworks ul {
-  height    : 150px;
   display   : flex;
   max-width : 495px;
   overflow-x: scroll;
@@ -240,7 +219,7 @@
 .myworks li {
   scroll-snap-align: center;
   width            : 200px;
-  transition       : all .2s ease-in-out,
+  transition       : opacity .2s ease-in-out, filter .2s ease-in-out,
     scale .1s ease-in-out;
   cursor          : pointer;
   text-align      : center;
@@ -251,19 +230,17 @@
   display         : flex;
   flex-direction  : column;
   justify-content : space-between;
+  min-height      : 150px;
+  will-change     : opacity, scale, filter;
 }
 
 .myworks li>a {
-
-  /* height                : 100%; */
-  /* background-color      : rgba(255, 255, 255, 0.357); */
-  display                  : flex;
-  flex-direction           : column;
-  flex-wrap                : wrap;
-  flex                     : 1 1;
-  align-items              : center;
-  /* justify-content       : stretch; */
-  gap                      : 0.5rem
+  display       : flex;
+  flex-direction: column;
+  flex-wrap     : wrap;
+  flex          : 1 1;
+  align-items   : center;
+  gap           : 0.5rem
 }
 
 .myworks li a:hover {
@@ -285,9 +262,60 @@
   }
 }
 
+@keyframes animate-in-and-out {
+  entry 0% {
+    opacity: 0;
+    filter : blur(5px);
+    scale  : .5;
+  }
+
+  entry 100% {
+    opacity: 1;
+    scale  : 1;
+    filter : blur(0);
+
+    transform-origin: bottom;
+  }
+
+  exit 0% {
+    opacity         : 1;
+    scale           : 1;
+    filter          : blur(0);
+    transform-origin: bottom;
+
+  }
+
+  exit 100% {
+    opacity: 0;
+    scale  : .5;
+    filter : blur(5px);
+  }
+}
+
 @media only screen and (max-width: 600px) {
+  .myworks {
+    padding-block: 4rem;
+
+  }
+
+  .myworks li {
+    min-height: initial;
+    min-height: 125px;
+  }
+
+  .myworks h2 {
+    margin: revert;
+  }
+
   @media (prefers-reduced-motion: no-preference) {
-    @supports (animation-timeline: view()) {
+
+
+    .myworks li {
+      animation         : linear animate-in-and-out;
+      animation-timeline: view();
+    }
+
+    /* @supports (animation-timeline: view()) {
       .myworks li {
         filter            : blur(10px);
         animation         : activeWorkLink linear both;
@@ -295,7 +323,7 @@
         scale             : .3;
         animation-range   : 20vh 80vh;
       }
-    }
+    } */
   }
 
   .about {
@@ -304,7 +332,6 @@
   }
 
   .picture {
-    /* width : 280px; */
     margin: 0 auto;
   }
 
@@ -314,8 +341,7 @@
   }
 
   .about {
-    width      : initial;
-    /* overflow: auto; */
+    width: initial;
   }
 
   .myworks {

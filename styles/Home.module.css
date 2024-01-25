@@ -138,6 +138,7 @@
   background    : repeating-linear-gradient(45deg, #000, transparent 100px);
   color         : hsla(0, 0%, 100%, .945);
   overflow      : hidden;
+  margin        : 0 auto;
 }
 
 .about .container {
@@ -250,7 +251,7 @@
 
 @keyframes activeWorkLink {
   from {
-    scale : 1;
+    scale : 1.1;
     filter: blur(0px);
   }
 }
@@ -309,21 +310,24 @@
 
   @media (prefers-reduced-motion: no-preference) {
 
-
-    .myworks li {
-      animation         : linear animate-in-and-out;
-      animation-timeline: view();
+    @supports (animation-timeline: view()) {
+      .myworks li {
+        filter               : blur(10px);
+        scale                : .8;
+        /* animation         : linear animate-in-and-out; */
+        animation            : activeWorkLink linear both;
+        animation-timeline   : view();
+        animation-range      : 50%;
+      }
     }
 
-    /* @supports (animation-timeline: view()) {
+    /* 
       .myworks li {
         filter            : blur(10px);
         animation         : activeWorkLink linear both;
         animation-timeline: view();
         scale             : .3;
-        animation-range   : 20vh 80vh;
-      }
-    } */
+        animation-range   : 20vh 80vh;*/
   }
 
   .about {

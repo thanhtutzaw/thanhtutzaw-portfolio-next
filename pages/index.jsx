@@ -80,7 +80,9 @@ in Yangon, Myanmar. Tech stacks are React.js, Next.js, Typescript and Firebase .
           content="https://thz.vercel.app/thanhtutzaw.png"
         />
 
-        <link rel="icon" href="/favicon.ico" />
+        {/* <link rel="icon" href="/favicon.ico" /> */}
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="manifest" href="manifest.json" />
       </Head>
 
       <main>

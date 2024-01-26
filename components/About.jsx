@@ -16,7 +16,7 @@ export function About({}) {
       <div className={styles.container}>
         <p className={styles.info}>
           Let&apos;s connect on{" "}
-          <Link href="mailto:zgi5025@gmail.com" target="_blank">
+          <Link href="mailto:zgyi5025@gmail.com" target="_blank">
             Gmail
           </Link>{" "}
           ,{" "}

@@ -4,7 +4,7 @@
   "start_url": "/",
   "display": "standalone",
   "background_color": "#fff",
-  "theme_color": "#FC035E",
+  "theme_color": "#fff",
   "display_override": ["fullscreen", "minimal-ui"],
   "description": "ThanHtutZaw's Portfolio",
   "categories": ["portfolio", "react", "javascript", "developer"],
@@ -14,14 +14,14 @@
       "src": "/mobile-screenshot.png",
       "sizes": "1600x900",
       "type": "image/png",
-      "label": "Homescreen of Awesome App"
+      "label": "ThanHtutZaw's Portfolio App"
     },
     {
       "src": "/Screenshot.png",
       "sizes": "1600x900",
       "type": "image/png",
       "form_factor": "wide",
-      "label": "Homescreen of Awesome App"
+      "label": "ThanHtutZaw's Portfolio App"
     }
   ],
   "icons": [

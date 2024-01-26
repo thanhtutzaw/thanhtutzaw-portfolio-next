@@ -4,24 +4,47 @@
   "start_url": "/",
   "display": "standalone",
   "background_color": "#fff",
+  "theme_color": "#FC035E",
+  "display_override": ["fullscreen", "minimal-ui"],
   "description": "ThanHtutZaw's Portfolio",
+  "categories": ["portfolio", "react", "javascript", "developer"],
+
+  "screenshots": [
+    {
+      "src": "/mobile-screenshot.png",
+      "sizes": "1600x900",
+      "type": "image/png",
+      "label": "Homescreen of Awesome App"
+    },
+    {
+      "src": "/Screenshot.png",
+      "sizes": "1600x900",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Homescreen of Awesome App"
+    }
+  ],
   "icons": [
     {
-      "src": "/public/thanhtutzaw.png",
+      "src": "/thanhtutzaw-48.png",
       "sizes": "48x48",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/thanhtutzaw-192.png",
+      "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/public/thanhtutzaw.png",
-      "sizes": "192x192",
+      "src": "/thanhtutzaw.png",
+      "sizes": "256x256",
       "type": "image/png"
-    }
-  ],
-
-  "shortcuts": [
+    },
     {
-      "name": "Send Email",
-      "url": "mailto:zgi5025@gmail.com"
+      "src": "/thanhtutzaw-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
   ]
 }

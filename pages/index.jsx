@@ -43,6 +43,7 @@ in Yangon, Myanmar. Tech stacks are React.js, Next.js, Typescript and Firebase .
           name="keywords"
           content="thanhtutzaw - Frontend Web Developer , Next.js , thanhtutzaw , React , thz , Yangon , Myanmar , METRO , Japan"
         />
+        <meta name="theme-color" content="#FC035E" />
         {/* <meta
           property="og:image"
           content="https://thz.vercel.app/thanhtutzaw.png"

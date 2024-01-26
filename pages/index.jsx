@@ -6,7 +6,7 @@ import { Skills } from "../components/Skills";
 import image from "../public/thanhtutzaw.png";
 import styles from "../styles/Home.module.css";
 import { useState } from "react";
-
+import Link from "next/link";
 export default function Home() {
   const [mounted, setMounted] = useState(false);
 
@@ -87,6 +87,32 @@ in Yangon, Myanmar. Tech stacks are React.js, Next.js, Typescript and Firebase .
       </Head>
 
       <main>
+        <Link
+          tabIndex={-1}
+          style={{
+            opacity: "0",
+            position: "fixed",
+            userSelect: "none",
+            top: "0",
+            display:'none',
+          }}
+          href={"/"}
+        >
+          Test Link
+        </Link>
+        <Link
+          tabIndex={-1}
+          style={{
+            opacity: "0",
+            position: "fixed",
+            userSelect: "none",
+            top: "0",
+            display:'none',
+          }}
+          href={"https://facebook-ui-zee.vercel.app"}
+        >
+          Facebook Clone
+        </Link>
         <div data-mounted={mounted} className={styles.cardsContainer}>
           <Picture mounted={mounted} setMounted={setMounted} image={image} />
           <About />

@@ -2,17 +2,17 @@
   "name": "ThanHtutZaw - React Dev",
   "short_name": "ThanHtutZaw",
   "start_url": "/",
-  "display": "standalone",
   "background_color": "#fff",
   "theme_color": "#fff",
-  "display_override": ["fullscreen", "minimal-ui"],
   "description": "ThanHtutZaw's Portfolio",
+  "display_override": ["fullscreen", "minimal-ui"],
+  "display": "standalone",
   "categories": ["portfolio", "react", "javascript", "developer"],
 
   "screenshots": [
     {
       "src": "/mobile-screenshot.png",
-      "sizes": "1600x900",
+      "sizes": "800x900",
       "type": "image/png",
       "label": "ThanHtutZaw's Portfolio App"
     },

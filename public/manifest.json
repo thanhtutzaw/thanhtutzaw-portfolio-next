@@ -1,7 +1,7 @@
 {
   "name": "ThanHtutZaw - React Dev",
   "short_name": "ThanHtutZaw",
-  "start_url": ".",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#fff",
   "description": "ThanHtutZaw's Portfolio",
@@ -15,6 +15,13 @@
       "src": "/public/thanhtutzaw.png",
       "sizes": "192x192",
       "type": "image/png"
+    }
+  ],
+
+  "shortcuts": [
+    {
+      "name": "Send Email",
+      "url": "mailto:zgi5025@gmail.com"
     }
   ]
 }

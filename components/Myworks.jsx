@@ -40,16 +40,21 @@ const works = [
 export function Myworks() {
   return (
     <div className={`${styles.myworks}`}>
-      <h2>My Works</h2>
+      <h1>My Works</h1>
       <ul>
         {works.map((project, index) => (
-          <li key={index}>
-            <Link target="_blank" href={project.liveDemo} title={project.title}>
+          <li key={`${project.title}-${index}`}>
+            <Link
+              target="_blank"
+              rel="noreferrer"
+              href={project.liveDemo}
+              title={project.title}
+            >
               <Image
                 priority={false}
                 width={30}
                 height={30}
-                alt={`${project.title} logo` ?? "Logo"}
+                alt={`${project.title} Logo` ?? "Logo"}
                 src={project.logo ? project.logo : ""}
               />
               <p>{project.title}</p>
@@ -57,6 +62,7 @@ export function Myworks() {
             {project.watchDemo && (
               <Link
                 target="_blank"
+                rel="noreferrer"
                 title={`Watch ${project.title}'s Demo`}
                 style={{
                   flex: "0 !important",

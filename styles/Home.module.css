@@ -185,8 +185,10 @@
 }
 
 
-.myworks h2 {
-  margin: 0;
+.myworks h1 {
+  margin   : 0;
+  font-size: 1.5em;
+
 }
 
 .myworks ul {
@@ -304,7 +306,7 @@
     min-height: 125px;
   }
 
-  .myworks h2 {
+  .myworks h1 {
     margin: revert;
   }
 

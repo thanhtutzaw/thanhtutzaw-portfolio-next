@@ -3,71 +3,47 @@ import { About } from "../components/About";
 import { Myworks } from "../components/Myworks";
 import { Picture } from "../components/Picture";
 import { Skills } from "../components/Skills";
-import image from "../public/thanhtutzaw.png";
 import styles from "../styles/Home.module.css";
 import { useState } from "react";
 import Link from "next/link";
+import thanhtutzawImage from "../public/thanhtutzaw.png";
+const title = "Than Htut Zaw - React DEV";
+const description =
+  "Frontend Web Developer . React.js and Next.js Developer based in Yangon, Myanmar. Tech stacks are React.js, Next.js, Typescript and Firebase .";
+const url = "https://thz.vercel.app";
+// const image = "/thanhtutzaw.png";
+const image = "https://thz.vercel.app/thanhtutzaw.png";
 export default function Home() {
   const [mounted, setMounted] = useState(false);
-
   return (
     <>
       <Head>
         <title>Than Htut Zaw - React DEV</title>
         <link rel="canonical" href="https://thz.vercel.app/" />
-        <meta
-          itemProp="image"
-          content="https://thz.vercel.app/thanhtutzaw.png"
-        />
-        <meta
-          name="description"
-          content="Frontend Web Developer . React.js and Next.js Developer based
-in Yangon, Myanmar. Tech stacks are React.js, Next.js, Typescript and Firebase ."
-        />
-        <meta
-          property="og:image"
-          content="https://thz.vercel.app/thanhtutzaw.png"
-        />
-        <meta property="og:site_name" content="GitHub" />
+        <meta itemProp="image" content={image} />
+        <meta name="description" content={description} />
         <meta property="profile:username" content="thanhtutzaw" />
         <meta
           name="keywords"
-          content="thanhtutzaw - Frontend Web Developer , Next.js , thanhtutzaw , React , thz , Yangon , Myanmar , METRO , Japan"
+          content="thanhtutzaw-Frontend Web Developer , Next.js , thanhtutzaw , React , thz , Yangon , Myanmar , METRO , Japan , IT , Facebook , Facebook clone , Facebook zee , Javascript , Typescript , Linkedin , github"
         />
         <meta name="theme-color" content="#FFF" />
-
-        <meta name="title" content="Than Htut Zaw - React DEV" />
-        
-
+        <meta name="title" content={title} />
+        <meta name="image" content={image} />
+        <meta property="og:title" content={title} />
+        <meta property="og:image" content={image} />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://thz.vercel.app/" />
-        <meta property="og:title" content="Than Htut Zaw - React DEV" />
-        <meta
-          property="og:description"
-          content="Frontend Web Developer . React.js and Next.js Developer based
-in Yangon, Myanmar. Tech stacks are React.js, Next.js, Typescript and Firebase ."
-        />
-        <meta property="twitter:url" content="https://thz.vercel.app" />
-
-        <meta
-          name="twitter:card"
-          content="https://thz.vercel.app/thanhtutzaw.png"
-        />
-        <meta name="twitter:title" content="Than Htut Zaw - React DEV" />
-        <meta
-          name="twitter:description"
-          content="Frontend Web Developer . React.js and Next.js Developer based
-in Yangon, Myanmar. Tech stacks are React.js, Next.js, Typescript and Firebase ."
-        />
-        <meta
-          name="twitter:image"
-          content="https://thz.vercel.app/thanhtutzaw.png"
-        />
-
+        <meta property="og:site_name" content="thanhtutzaw" />
+        <meta property="og:description" content={description} />
+        <meta property="og:url" content={url} />
+        <meta name="twitter:card" content={image} />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:image" content={image} />
+        <meta name="twitter:description" content={description} />
+        <meta property="twitter:url" content={url} />
         <link rel="icon" href="/favicon.ico" />
         <link rel="manifest" href="manifest.json" />
       </Head>
-
       <main>
         <Link
           tabIndex={-1}
@@ -96,7 +72,11 @@ in Yangon, Myanmar. Tech stacks are React.js, Next.js, Typescript and Firebase .
           Facebook Clone
         </Link>
         <div data-mounted={mounted} className={styles.cardsContainer}>
-          <Picture mounted={mounted} setMounted={setMounted} image={image} />
+          <Picture
+            mounted={mounted}
+            setMounted={setMounted}
+            image={thanhtutzawImage}
+          />
           <About />
           <Myworks />
           <Skills mounted={mounted} />

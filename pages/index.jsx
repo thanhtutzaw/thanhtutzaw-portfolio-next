@@ -19,15 +19,6 @@ export default function Home() {
           itemProp="image"
           content="https://thz.vercel.app/thanhtutzaw.png"
         />
-
-        {/* <meta
-          name="google-site-verification"
-          content="qc6hIVo2Smmqv8yS1lTr3fCqAEcAvnAve9MwVzmp0nc"
-        /> */}
-        {/* <meta
-          name="description"
-          content="Web Dev , React , Next.js , thanhtutzaw , thz"
-        /> */}
         <meta
           name="description"
           content="Frontend Web Developer . React.js and Next.js Developer based
@@ -43,18 +34,10 @@ in Yangon, Myanmar. Tech stacks are React.js, Next.js, Typescript and Firebase .
           name="keywords"
           content="thanhtutzaw - Frontend Web Developer , Next.js , thanhtutzaw , React , thz , Yangon , Myanmar , METRO , Japan"
         />
-        <meta name="theme-color" content="#FC035E" />
-        {/* <meta
-          property="og:image"
-          content="https://thz.vercel.app/thanhtutzaw.png"
-        /> */}
+        <meta name="theme-color" content="#FFF" />
 
         <meta name="title" content="Than Htut Zaw - React DEV" />
-        <meta
-          name="description"
-          content="Frontend Web Developer . React.js and Next.js Developer based
-in Yangon, Myanmar. Tech stacks are React.js, Next.js, Typescript and Firebase ."
-        />
+        
 
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://thz.vercel.app/" />
@@ -81,8 +64,7 @@ in Yangon, Myanmar. Tech stacks are React.js, Next.js, Typescript and Firebase .
           content="https://thz.vercel.app/thanhtutzaw.png"
         />
 
-        {/* <link rel="icon" href="/favicon.ico" /> */}
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon.ico" />
         <link rel="manifest" href="manifest.json" />
       </Head>
 
@@ -94,7 +76,7 @@ in Yangon, Myanmar. Tech stacks are React.js, Next.js, Typescript and Firebase .
             position: "fixed",
             userSelect: "none",
             top: "0",
-            display:'none',
+            display: "none",
           }}
           href={"/"}
         >
@@ -107,7 +89,7 @@ in Yangon, Myanmar. Tech stacks are React.js, Next.js, Typescript and Firebase .
             position: "fixed",
             userSelect: "none",
             top: "0",
-            display:'none',
+            display: "none",
           }}
           href={"https://facebook-ui-zee.vercel.app"}
         >

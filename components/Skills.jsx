@@ -6,7 +6,7 @@ const skills = [
   { label: "SASS", imageURL: "/assets/sass.svg", id: "right" },
   { label: "TypeScript", imageURL: "/assets/typescript.svg", id: "left" },
   { label: "Firebase", imageURL: "/assets/firebase.svg", id: "top" },
-  { label: "Nest", imageURL: "", id: "bottom" },
+  { label: "MERN", imageURL: "", id: "bottom" },
 ];
 export function Skills({ mounted }) {
   return (

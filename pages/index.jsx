@@ -9,7 +9,7 @@ import Link from "next/link";
 import thanhtutzawImage from "../public/thanhtutzaw.png";
 const title = "Than Htut Zaw - React DEV";
 const description =
-  "Frontend Web Developer . React.js and Next.js Developer based in Yangon, Myanmar. Tech stacks are React.js, Next.js, Typescript and Firebase .";
+  "Frontend Web Developer . React.js and Next.js Developer based in Yangon, Myanmar.  Crafting dynamic interfaces for a standout online presence. Let's create something extraordinary together!";
 const url = "https://thz.vercel.app";
 // const image = "/thanhtutzaw.png";
 const image = "https://thz.vercel.app/thanhtutzaw.png";

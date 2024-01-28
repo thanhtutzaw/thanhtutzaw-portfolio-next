@@ -141,6 +141,7 @@
   color         : hsla(0, 0%, 100%, .945);
   overflow      : hidden;
   margin        : 0 auto;
+  min-height    : 256px;
 }
 
 .about .container {
@@ -171,7 +172,7 @@
   overflow-x      : hidden;
   position        : relative;
   scroll-snap-type: y mandatory;
-  min-height      : 256px;
+
 
 }
 

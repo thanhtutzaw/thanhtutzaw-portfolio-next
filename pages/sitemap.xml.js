@@ -12,7 +12,7 @@ export function generateSiteMap() {
     // }));
 
     // return [...routes];
-    return `<?xml version="1.0" encoding="UTF-8"?>
+    return `<xml version="1.0" encoding="UTF-8">
    <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
      <!-- Add the static URLs manually -->
      <url>
@@ -24,11 +24,11 @@ export function generateSiteMap() {
       <url>
        <loc>${URL}/blog</loc>
      </url>
-            ${["", "/hello"].map((route) => {
+            ${["/hello"].map((route) => {
         return `
             <url><loc>${URL}${route}</loc></url>
             `}).join("")}
-   </urlset>
+   </urlset></xml>
  `;
 }
 

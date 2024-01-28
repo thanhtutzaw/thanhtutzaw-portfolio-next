@@ -22,9 +22,7 @@ export function generateSiteMap() {
         <!-- Starting with the news extension tags -->
         <!-- Next we add image extension tags -->
         <image:image>
-            <image:loc>
-        https://thz.vercel.app/thanhtutzaw.png
-        </image:loc>
+            <image:loc>https://thz.vercel.app/thanhtutzaw.png</image:loc>
         </image:image>
         <!-- Next we add video extension tags -->
         <!-- <video:video>
@@ -53,7 +51,12 @@ export function generateSiteMap() {
     </url>
             ${["/hello"].map((route) => {
     return `
-            <url><loc>${URL}${route}</loc></url>
+            <url>
+            <loc>${URL}${route}</loc>
+            <image:image>
+            <image:loc>https://thz.vercel.app/thanhtutzaw.png</image:loc>
+        </image:image>
+            </url>
             `}).join("")}
    </urlset> 
  `;

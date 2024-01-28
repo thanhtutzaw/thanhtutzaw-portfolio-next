@@ -28,7 +28,7 @@ export function generateSiteMap() {
     return `
             <url><loc>${URL}${route}</loc></url>
             `}).join("")}
-   </urlset>
+   </urlset> 
  `;
 }
 

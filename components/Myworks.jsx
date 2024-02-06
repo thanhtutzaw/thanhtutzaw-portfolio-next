@@ -27,7 +27,7 @@ const works = [
   {
     title: "Kyat Zay",
     liveDemo: "https://kyatzay.vercel.app",
-    logo: "https://kyatzay.vercel.app/assets/favicon.ico",
+    logo: "https://kyatzay.vercel.app/assets/favicon.svg",
     github: "https://github.com/thanhtutzaw/kyatzay",
   },
   {

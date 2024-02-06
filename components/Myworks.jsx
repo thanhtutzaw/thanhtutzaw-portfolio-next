@@ -11,7 +11,7 @@ const works = [
   },
   {
     title: "Too",
-    liveDemo: "https://too.netlify.app",
+    liveDemo: "https://toodemo.vercel.app",
     logo: "https://raw.githubusercontent.com/thanhtutzaw/too/47389ae63da321da5eb68a6ec19760781a8486a0/public/logo.svg",
     github: "https://github.com/thanhtutzaw/too",
     watchDemo: "https://www.youtube.com/watch?v=Nm6O924DuCs",

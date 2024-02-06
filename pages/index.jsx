@@ -7,7 +7,7 @@ import styles from "../styles/Home.module.css";
 import { useState } from "react";
 import Link from "next/link";
 import thanhtutzawImage from "../public/thanhtutzaw.png";
-const title = "Than Htut Zaw - React DEV";
+const title = "Than Htut Zaw - Frontend DEV | React.js | Next.js | Angular";
 const description =
   "Frontend Developer based in Yangon, Myanmar, with a profound passion for software development. Specializing in crafting dynamic web applications that seamlessly blend creativity and functionality.";
 const url = "https://thz.vercel.app";

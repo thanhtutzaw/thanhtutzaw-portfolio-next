@@ -25,10 +25,10 @@ const works = [
       "https://www.youtube.com/watch?v=CRV3aZOFefQ&list=PL7OpFd3agQxb3jOqAVm4msHNlH34uai3i&index=1",
   },
   {
-    title: "GoogleFile UI",
-    liveDemo: "https://google-file.vercel.app",
-    logo: "https://google-file.vercel.app/favicon.ico",
-    github: "https://github.com/thanhtutzaw/google-file",
+    title: "Kyat Zay",
+    liveDemo: "https://kyatzay.vercel.app",
+    logo: "https://kyatzay.vercel.app/assets/favicon.ico",
+    github: "https://github.com/thanhtutzaw/kyatzay",
   },
   {
     title: "Draggable Drawer",

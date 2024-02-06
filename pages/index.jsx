@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Than Htut Zaw - React DEV</title>
+        <title>{title}</title>
         <link rel="canonical" href="https://thz.vercel.app/" />
         <meta itemProp="image" content={image} />
         <meta name="description" content={description} />

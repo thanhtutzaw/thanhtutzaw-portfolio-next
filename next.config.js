@@ -18,6 +18,11 @@ module.exports = {
         hostname: 'raw.githubusercontent.com',
         port: '',
       },
+ {
+        protocol: 'https',
+        hostname: 'kyatzay.vercel.app',
+        port: '',
+      },
       {
         protocol: 'https',
         hostname: 'todolistzee3.netlify.app',

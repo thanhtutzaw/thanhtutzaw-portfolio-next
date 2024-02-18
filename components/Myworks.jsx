@@ -31,10 +31,10 @@ const works = [
     github: "https://github.com/thanhtutzaw/kyatzay",
   },
   {
-    title: "Draggable Drawer",
-    liveDemo: "https://utube-next.vercel.app",
-    logo: "https://utube-next.vercel.app/favicon.ico",
-    github: "https://github.com/thanhtutzaw/u-tube",
+    title: "Won Job",
+    liveDemo: "https://wonjob.vercel.app",
+    logo: "https://wonjob.vercel.app/favicon.ico",
+    github: "https://github.com/thanhtutzaw/wonjob",
   },
 ];
 export function Myworks() {

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/Home.module.css";
+import { View_CV } from "../data";
 
 export function Picture({ mounted, setMounted, image }) {
   return (
@@ -28,13 +29,7 @@ export function Picture({ mounted, setMounted, image }) {
         style={{ zIndex: "2" }}
         className={mounted ? styles.resumeLink : styles.disabled}
       >
-        <Link
-          href={
-            "https://docs.google.com/document/d/1YTJpGv03D44GieELhkUlbbzpIIBYY6MSR25vvy51IzQ/edit?usp=sharing"
-          }
-        >
-          View Resume
-        </Link>
+        <Link href={View_CV}>View CV</Link>
       </div>
     </div>
   );

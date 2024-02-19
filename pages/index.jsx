@@ -7,12 +7,12 @@ import styles from "../styles/Home.module.css";
 import { useState } from "react";
 import Link from "next/link";
 import thanhtutzawImage from "../public/thanhtutzaw.png";
+import { profile } from "../data";
 const title = "Than Htut Zaw - React DEV";
 const description =
   "Frontend Developer based in Yangon, Myanmar, with a profound passion for software development. Specializing in crafting dynamic web applications that seamlessly blend creativity and functionality.";
 const url = "https://thz.vercel.app";
-// const image = "/thanhtutzaw.png";
-const image = "https://thz.vercel.app/thanhtutzaw.png";
+const image = profile;
 export default function Home() {
   const [mounted, setMounted] = useState(false);
   return (
@@ -67,7 +67,7 @@ export default function Home() {
             top: "0",
             display: "none",
           }}
-          href={"https://facebook-ui-zee.vercel.app"}
+          href="https://facebook-ui-zee.vercel.app"
         >
           Facebook Clone
         </Link>

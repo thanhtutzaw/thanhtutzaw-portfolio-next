@@ -13,9 +13,18 @@ module.exports = {
   },
   images: {
     remotePatterns: [
+ {protocol: 'https',
+        hostname: 'wonjob.vercel.app',
+        port: '',
+      },      
       {
         protocol: 'https',
         hostname: 'raw.githubusercontent.com',
+        port: '',
+      },
+ {
+        protocol: 'https',
+        hostname: 'kyatzay.vercel.app',
         port: '',
       },
       {

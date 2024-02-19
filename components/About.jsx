@@ -1,6 +1,7 @@
 import Link from "next/link";
 import styles from "../styles/Home.module.css";
 import { useRef, useState } from "react";
+import { contactLists } from "../data";
 
 export function About({}) {
   const [copied, setcopied] = useState(false);
@@ -11,42 +12,41 @@ export function About({}) {
       setcopied(false);
     }
   }
+  const firstContactLists = contactLists.slice(0, contactLists.length - 2);
+  const lastTwoLists = contactLists.slice(
+    firstContactLists.length,
+    contactLists.length - 1
+  );
+  const lastOneLists = contactLists.slice(
+    contactLists.length - 1,
+    contactLists.length
+  );
   return (
     <div className={`${styles.about}`}>
       <div className={styles.container}>
-        <p className={styles.info}>
+        <div className={styles.info}>
           Let&apos;s connect on{" "}
-          <Link
-            href="mailto:zgyi5025@gmail.com"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Gmail
-          </Link>{" "}
-          ,{" "}
-          <Link
-            target="_blank"
-            rel="noreferrer"
-            href="https://github.com/thanhtutzaw"
-          >
-            GitHub
-          </Link>{" "}
-          ,{" "}
-          <Link
-            target="_blank"
-            rel="noreferrer"
-            href="https://www.linkedin.com/in/than-htut-zaw-373954213/"
-          >
-            Linkedin
-          </Link>{" "}
-          or{" "}
-          <Link
-            target="_blank"
-            rel="noreferrer"
-            href="https://t.me/ThanHtutZaw"
-          >
-            Telegram
-          </Link>{" "}
+          {firstContactLists.map(({ label, url }) => (
+            <>
+              <Link key={label} target="_blank" rel="noreferrer" href={url}>
+                {label}
+              </Link>
+              {" , "}
+            </>
+          ))}
+          {lastTwoLists.map(({ label, url }) => (
+            <Link key={label} target="_blank" rel="noreferrer" href={url}>
+              {label}
+            </Link>
+          ))}
+          {" or "}
+          {lastOneLists.map(({ label, url }) => (
+            <>
+              <Link key={label} target="_blank" rel="noreferrer" href={url}>
+                {label}
+              </Link>{" "}
+            </>
+          ))}
           to chat more about your project needs!
           {/* <span style={{ fontSize: "25px", fontFamily: "serif" }}>I</span> am a */}
           {/* Let's connect on Gmail, Github, LinkedIn, or Telegram to chat more about
@@ -55,7 +55,7 @@ export function About({}) {
           connect with me, please feel free to reach out via Gmail, Github,
           LinkedIn, or Telegram. I look forward to the opportunity to collaborate
           with you! */}
-        </p>
+        </div>
         <div className={styles.footer}>
           <p>
             Hey there, I&apos;m Than Htut Zaw – a React.js specialist with a

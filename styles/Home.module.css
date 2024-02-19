@@ -149,9 +149,10 @@
 }
 
 .about .info {
-  margin-top: 0;
-  background: #7070706b;
-  padding   : 0.5rem;
+  background  : #7070706b;
+  padding     : 0.5rem;
+  margin-block: 1em;
+  margin-top  : 0;
 }
 
 .about .footer>p {
@@ -389,7 +390,6 @@
   text-decoration: underline;
   cursor         : pointer;
 }
-
 
 .skill {
   grid-column    : 3/4;

@@ -29,7 +29,9 @@ export function Picture({ mounted, setMounted, image }) {
         style={{ zIndex: "2" }}
         className={mounted ? styles.resumeLink : styles.disabled}
       >
-        <Link href={View_CV}>View CV</Link>
+        <Link target="_blank" rel="noreferrer" href={View_CV}>
+          View CV
+        </Link>
       </div>
     </div>
   );

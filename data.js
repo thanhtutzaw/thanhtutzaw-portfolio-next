@@ -44,3 +44,9 @@ export const skills = [
     { label: "Firebase", imageURL: "/assets/firebase.svg", id: "top" },
     { label: "MERN", imageURL: "", id: "bottom" },
 ];
+export const contactLists = [
+    { label: "Gmail", url: "mailto:zgyi5025@gmail.com" },
+    { label: "GitHub", url: "https://github.com/thanhtutzaw" },
+    { label: "LinkedIn", url: "https://www.linkedin.com/in/than-htut-zaw-373954213/" },
+    { label: "Telegram", url: "https://t.me/ThanHtutZaw" }
+];

@@ -32,7 +32,7 @@ export const works = [
     {
         "title": "Won Job",
         "liveDemo": "https://wonjob.vercel.app",
-        "logo": "https://wonjob.vercel.app/logo.svg",
+        "logo": "https://raw.githubusercontent.com/thanhtutzaw/thanhtutzaw-portfolio-next/b02960de32605b31e9f5671b6e3cdce0a5d2e3bd/public/assets/wonjob.svg",
         "github": "https://github.com/thanhtutzaw/wonjob"
     }
 ];

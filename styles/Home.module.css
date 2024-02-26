@@ -392,20 +392,19 @@
 }
 
 .skill {
-  grid-column                   : 3/4;
-  grid-row                      : 2/2;
-  min-width                     : 120px;
-  min-height                    : 120px;
-  position                      : relative;
-  grid-gap                      : unset;
-  overflow                      : visible !important;
-  animation                     : spin 5s infinite cubic-bezier(0.4, 0, 0.2, 1);
-  /* -webkit-transform-style    : preserve-3d;
-  transform-style               : preserve-3d;
-  -webkit-backface-visibility   : hidden;
-  backface-visibility           : hidden; */
-  /* border                     : 2px solid red; */
-  animation-play-state          : paused;
+  grid-column                      : 3/4;
+  grid-row                         : 2/2;
+  min-width                        : 120px;
+  min-height                       : 120px;
+  position                         : relative;
+  grid-gap                         : unset;
+  /* overflow                      : visible !important; */
+  animation                        : spin 5s infinite cubic-bezier(0.4, 0, 0.2, 1);
+  /* -webkit-transform-style       : preserve-3d;
+  transform-style                  : preserve-3d;
+  -webkit-backface-visibility      : hidden;
+  backface-visibility              : hidden; */
+  /* border                        : 2px solid red; */
 
   animation-play-state       : running;
   -webkit-transform-style    : preserve-3d;
@@ -515,10 +514,10 @@
 }
 
 .right {
-  background-color: #03fc94;
-  background-color: #0ecf7f;
-  transform       : rotateZ(180deg) rotateY(180deg) var(--z);
-  transform       : rotateZ(305deg) rotateY(295deg) var(--z);
+  background-color   : #03fc94;
+  background-color   : #0ecf7f;
+  transform          : rotateZ(180deg) rotateY(180deg) var(--z);
+  /* transform       : rotateZ(305deg) rotateY(295deg) var(--z); */
 }
 
 .left {

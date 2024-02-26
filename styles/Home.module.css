@@ -392,16 +392,21 @@
 }
 
 .skill {
-  grid-column    : 3/4;
-  grid-row       : 2/2;
-  min-width      : 120px;
-  min-height     : 120px;
-  position       : relative;
-  transform-style: preserve-3d;
-  transform      : translateZ(-100px);
-  grid-gap       : unset;
-  /* animation   : spin 5s infinite ease-in-out; */
-  animation      : spin 5s infinite cubic-bezier(0.4, 0, 0.2, 1)
+  grid-column: 3/4;
+  grid-row   : 2/2;
+  min-width  : 120px;
+  min-height : 120px;
+  position   : relative;
+  grid-gap   : unset;
+  animation  : spin 5s infinite cubic-bezier(0.4, 0, 0.2, 1);
+  border     : 2px solid red;
+}
+
+@supports (transform-style: preserve-3d) {
+  .skill {
+    transform-style: preserve-3d;
+    border         : 2px solid green;
+  }
 }
 
 .skill[data-mounted="true"]>div {
@@ -460,16 +465,20 @@
   opacity        : 1;
 }
 
+:where(.front, .back, .right, .left, .top, .bottom) {
+  /* --z: translateZ(150px); */
+}
+
 .front {
   background-color: var(--primary-bg);
-  transform       : rotateY(0deg) translateZ(100px);
+  transform       : rotateY(0deg) var(--z);
   filter          : blur(10);
   backdrop-filter : blur(20);
   backdrop-filter : blur(4px);
 }
 
 .back {
-  transform       : rotateY(90deg) translateZ(100px);
+  transform       : rotateY(90deg) var(--z);
   backdrop-filter : blur(13px);
   background-color: rgb(27 27 27 / 16%);
   border          : 1px solid rgba(0, 0, 0, 0.247)
@@ -478,20 +487,20 @@
 .right {
   background-color: #03fc94;
   background-color: #0ecf7f;
-  transform       : rotateZ(180deg) rotateY(180deg) translateZ(100px);
+  transform       : rotateZ(180deg) rotateY(180deg) var(--z);
 }
 
 .left {
   background-color: #ec8b0c;
-  transform       : rotateZ(360deg) rotateX(-90deg) translateZ(100px);
+  transform       : rotateZ(360deg) rotateX(-90deg) var(--z);
 }
 
 .top {
   background-color: #0f92b9;
-  transform       : rotateX(90deg) translateZ(100px);
+  transform       : rotateX(90deg) var(--z);
 }
 
 .bottom {
   background-color: #7703fc;
-  transform       : rotateY(270deg) translateZ(90px);
+  transform       : rotateY(270deg) var(--z);
 }

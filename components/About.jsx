@@ -28,21 +28,36 @@ export function About({}) {
           Let&apos;s connect on{" "}
           {firstContactLists.map(({ label, url }) => (
             <>
-              <Link key={label} target="_blank" rel="noreferrer" href={url}>
+              <Link
+                key={`${label} ${url}`}
+                target="_blank"
+                rel="noreferrer"
+                href={url}
+              >
                 {label}
               </Link>
               {" , "}
             </>
           ))}
           {lastTwoLists.map(({ label, url }) => (
-            <Link key={label} target="_blank" rel="noreferrer" href={url}>
+            <Link
+              key={`${label} ${url}`}
+              target="_blank"
+              rel="noreferrer"
+              href={url}
+            >
               {label}
             </Link>
           ))}
           {" or "}
           {lastOneLists.map(({ label, url }) => (
             <>
-              <Link key={label} target="_blank" rel="noreferrer" href={url}>
+              <Link
+                key={`${label} ${url}`}
+                target="_blank"
+                rel="noreferrer"
+                href={url}
+              >
                 {label}
               </Link>{" "}
             </>

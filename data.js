@@ -1,6 +1,6 @@
 export const profile = "https://thz.vercel.app/thanhtutzaw.png"
 export const View_CV = "https://docs.google.com/presentation/d/19UIEOkgrFCiDksabsw1sePpt7BeAnqiSUxJEGpGCpy4/edit?usp=sharing"
-// export const View_CV = "https://docs.google.com/document/d/1YTJpGv03D44GieELhkUlbbzpIIBYY6MSR25vvy51IzQ/edit?usp=sharing"
+// export const View_Resume = "https://docs.google.com/document/d/1YTJpGv03D44GieELhkUlbbzpIIBYY6MSR25vvy51IzQ/edit?usp=sharing"
 export const works = [
     {
         "title": "Todo",

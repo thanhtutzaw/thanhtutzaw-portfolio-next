@@ -398,7 +398,7 @@
   min-height       : 120px;
   position         : relative;
   grid-gap         : unset;
-  /* animation     : spin 5s infinite cubic-bezier(0.4, 0, 0.2, 1); */
+  animation        : spin 5s infinite cubic-bezier(0.4, 0, 0.2, 1);
   /* border        : 2px solid red; */
 }
 

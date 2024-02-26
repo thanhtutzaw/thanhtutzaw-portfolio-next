@@ -398,6 +398,7 @@
   min-height                    : 120px;
   position                      : relative;
   grid-gap                      : unset;
+  overflow                      : visible !important;
   animation                     : spin 5s infinite cubic-bezier(0.4, 0, 0.2, 1);
   /* -webkit-transform-style    : preserve-3d;
   transform-style               : preserve-3d;
@@ -405,6 +406,12 @@
   backface-visibility           : hidden; */
   /* border                     : 2px solid red; */
   animation-play-state          : paused;
+
+  animation-play-state       : running;
+  -webkit-transform-style    : preserve-3d;
+  transform-style            : preserve-3d;
+  -webkit-backface-visibility: hidden;
+  backface-visibility        : hidden;
 }
 
 @supports (transform-style: preserve-3d) {

@@ -392,14 +392,14 @@
 }
 
 .skill {
-  grid-column: 3/4;
-  grid-row   : 2/2;
-  min-width  : 120px;
-  min-height : 120px;
-  position   : relative;
-  grid-gap   : unset;
-  animation  : spin 5s infinite cubic-bezier(0.4, 0, 0.2, 1);
-  border     : 2px solid red;
+  grid-column      : 3/4;
+  grid-row         : 2/2;
+  min-width        : 120px;
+  min-height       : 120px;
+  position         : relative;
+  grid-gap         : unset;
+  /* animation     : spin 5s infinite cubic-bezier(0.4, 0, 0.2, 1); */
+  /* border        : 2px solid red; */
 }
 
 @supports (transform-style: preserve-3d) {
@@ -488,6 +488,7 @@
   background-color: #03fc94;
   background-color: #0ecf7f;
   transform       : rotateZ(180deg) rotateY(180deg) var(--z);
+  transform       : rotateZ(305deg) rotateY(295deg) var(--z);
 }
 
 .left {

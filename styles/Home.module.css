@@ -415,7 +415,7 @@
 
 @supports (transform-style: preserve-3d) {
   .skill {
-    border                     : 2px solid green;
+    /* border                     : 2px solid green; */
     animation-play-state       : running;
     -webkit-transform-style    : preserve-3d;
     transform-style            : preserve-3d;

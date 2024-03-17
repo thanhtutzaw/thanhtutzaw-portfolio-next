@@ -82,7 +82,7 @@ export function About({}) {
             crafting top-notch web applications.
           </p>
           {/* <p>I am currently working as a Frontend Developer at [Company Name].</p> */}
-          <p>Currently working at Personal Projects.</p>
+          <p>Currently working at JOBDOH.</p>
           {/* <p>Currently a Frontend Developer at [Company Name].</p> */}
         </div>
         <dialog onClick={closeModal} id="gmailModal" ref={gmailModalRef}>
